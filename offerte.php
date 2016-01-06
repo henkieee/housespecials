@@ -1587,33 +1587,38 @@ $ContentPg[$page].='<img id="'.$arrTabItems['css_id']['tabCntContainer'].'_'.$i.
 		$val_unit="cm";
 		//$fld_opdikken="off_opdikken";
 		//$val_opdikken=$PgFldVal[$pg][$fld_opdikken]; //WARNING: field value is not checked yet
-		if ($mode=="init" || $mode=="ctrl") {
+		if ($mode=="init" || $mode=="ctrl")
+		{
 			$msg[$fld]="";
 			$whitelist="0123456789";
 			$minlen=1;
 			$maxlen=2;
 			$val_default="";
-			switch ($val_materiaal) {
-			case "BC":
-			//case "BL":
-			//case "T":
-				$val_default="4";
-				if ($val=="") $val=$val_default;
-				if ($val!="4" && $val!="5" && $val!="6" && $val!="8" && $val!="10") $val="";
-				break;
-			case "L":
-				$minlen=2;
-				$maxlen=2;
-				$val_default="25";
-				$val_unit="mm";
-				if ($val=="") $val=$val_default;
-				if ($val!="25" && $val!="32" && $val!="38") $val=""; //note: see special restrictions in case off_randafwerking
-				break;
-			default: //unknown/illegal value
-				$val="";
+			switch ($val_materiaal)
+			{
+				case "BC":
+				//case "BL":
+				//case "T":
+					$val_default="4";
+					if ($val=="") $val=$val_default;
+					if ($val!="4" && $val!="5" && $val!="6" && $val!="8" && $val!="10") $val="";
+					break;
+				case "L":
+					$minlen=2;
+					$maxlen=2;
+					$val_default="25";
+					$val_unit="mm";
+					if ($val=="") $val=$val_default;
+					if ($val!="25" && $val!="32" && $val!="38") $val=""; //note: see special restrictions in case off_randafwerking
+					break;
+				default: //unknown/illegal value
+					$val="";
 			}
 			if ($mode=="ctrl") fnc_ChkFldInput($val, $whitelist, $minlen, $maxlen, "De dikte", $msg[$fld]);
-			if ($msg[$fld]>"") {$msg[$fld]='<br />'.$msg[$fld]; $result=FALSE;}
+			if ($msg[$fld]>"")
+			{
+				$msg[$fld]='<br />'.$msg[$fld]; $result=FALSE;
+			}
 			/*if ($mode=="ctrl" && $val>"" && $val!=$val_default && $val_opdikken>"") { //rule: set default thickness on thickening plate
 				if ($msg[$fld]=="") $msg[$fld]='<br />';
 				$msg[$fld].='<font color="#FF0000">De standaard dikte is verplicht bij het opdikken van het werkblad.</font><br />';
@@ -1622,7 +1627,8 @@ $ContentPg[$page].='<img id="'.$arrTabItems['css_id']['tabCntContainer'].'_'.$i.
 			}*/
 			$PgFldVal[$page][$fld]=$val;
 		}
-		if ($mode=="proposal" || $mode=="email") {
+		if ($mode=="proposal" || $mode=="email")
+		{
 			$valtxt="";
 			$valimg="";
 			$title="";
@@ -1661,11 +1667,66 @@ $ContentPg[$page].='<img id="'.$arrTabItems['css_id']['tabCntContainer'].'_'.$i.
 		//Henk
 
 		//&& $name == "Henk"
+		$item = array(
+			"material" => $val_materiaal,
+			"type" => "Haaks"
+		);
+
+		$materials = array(
+			"L" => array(
+				"haaks" => array(
+					"title" => "Haaks",
+					"img" => "images/HS_kleur_laminaat/bladen/haaks/VAM32 web.jpg",
+					"dimension" => "mm",
+					"thickness" => array("25", "32", "76"),
+					"thicken" => array("36", "50", "60", "76"),
+					"extra" => array(
+						"abs" => array(
+							"title" => "Rand afwerken met ABSband",
+							"description" => "ABSband is een band van hardmateriaal in de zelfde kleur van het blad. De voorzijde wordt hierdoor veel beter bestand tegen stoten"
+						)
+					)
+				),
+				"waterkering" => array(
+					"title" => "Waterkering",
+					"img" => "images/HS_kleur_laminaat/bladen/haaks/VAM32 web.jpg"
+				),
+				"afgerond" => array(
+					"title" => "Afgerond",
+					"img" => "images/HS_kleur_laminaat/bladen/haaks/VAM32 web.jpg",
+				)
+			)
+		);
 
 		if($mode == "html" )
 		{
-			$ContentPg[$page].='<tr><td class="FrmTblTdLabel">Plint/achterwand meeleveren:</td>'.PHP_EOL;
+			$ContentPg[$page].='<tr><td class="FrmTblTdLabel">Werkblad afwerking</td>'.PHP_EOL;
 			$ContentPg[$page].='	<td>';
+
+			if($val_materiaal)
+			{
+				$ContentPg[$page].= '<table border="0" cellpadding="0" cellspacing="0">'.PHP_EOL;
+				foreach($materials[$item["material"]] as $key => $value)
+				{
+
+					$ContentPg[$page].= '<tr><td style="text-align:left;vertical-align:middle;width:200px">';
+					$ContentPg[$page].= '<input type="radio" name="'.$fld.'" value="" '.($val==""?'checked="checked" ':NULL).'class="radio" />';
+					$ContentPg[$page].= '&nbsp;' . $value["title"] . '</td><td>';
+					$ContentPg[$page].= '<img src="'.$GLOBALS["own"]["baseurl"] . $value["img"] . '"';
+					$ContentPg[$page].= 'title="geen wandafwerking" style="width:230px;" /></td></tr>'.PHP_EOL;
+				}
+				$ContentPg[$page].='</table>'.PHP_EOL;
+			}
+			else
+			{
+				var_dump("Geen materiaal gekozen");
+			}
+
+
+
+
+
+
 			$ContentPg[$page].='<table border="0" cellpadding="0" cellspacing="0">'.PHP_EOL;
 			$ContentPg[$page].='<tr><td style="text-align:left;vertical-align:middle;width:200px"><input type="radio" name="'.$fld.'" value="" '.($val==""?'checked="checked" ':NULL).'class="radio" />&nbsp;Geen&nbsp;plint&nbsp;of&nbsp;achterwand</td><td><img src="'.$GLOBALS["own"]["baseurl"].'images/stap6/geen-achterwand-plint.jpg" title="geen wandafwerking" style="width:230px;" /></td></tr>'.PHP_EOL;
 
