@@ -53,7 +53,7 @@ $PgFldList[2]="off_model,off_blad1_lengte,off_blad1_fornuis,off_blad1_lengte2,of
 $PgFldList[3]="off_rand_zichtbaar_blad1_boven,off_rand_zichtbaar_blad1_rechts,off_rand_zichtbaar_blad1_onder,off_rand_zichtbaar_blad1_links,off_rand_zichtbaar_blad2_boven,off_rand_zichtbaar_blad2_rechts,off_rand_zichtbaar_blad2_onder,off_rand_zichtbaar_blad2_links,off_rand_zichtbaar_blad3_boven,off_rand_zichtbaar_blad3_rechts,off_rand_zichtbaar_blad3_onder,off_rand_zichtbaar_blad3_links,off_rand_zichtbaar_blad4_boven,off_rand_zichtbaar_blad4_rechts,off_rand_zichtbaar_blad4_onder,off_rand_zichtbaar_blad4_links,off_rand_zichtbaar_blad5_boven,off_rand_zichtbaar_blad5_rechts,off_rand_zichtbaar_blad5_onder,off_rand_zichtbaar_blad5_links,off_rand_zichtbaar_blad6_boven,off_rand_zichtbaar_blad6_rechts,off_rand_zichtbaar_blad6_onder,off_rand_zichtbaar_blad6_links,off_rand_zichtbaar_blad7_boven,off_rand_zichtbaar_blad7_rechts,off_rand_zichtbaar_blad7_onder,off_rand_zichtbaar_blad7_links,off_rand_zichtbaar_blad8_boven,off_rand_zichtbaar_blad8_rechts,off_rand_zichtbaar_blad8_onder,off_rand_zichtbaar_blad8_links,off_rand_zichtbaar_blad9_boven,off_rand_zichtbaar_blad9_rechts,off_rand_zichtbaar_blad9_onder,off_rand_zichtbaar_blad9_links";
 $PgFldList[4]="off_staander,off_staander_blad1_boven,off_staander_blad1_rechts,off_staander_blad1_onder,off_staander_blad1_links,off_staander_blad2_boven,off_staander_blad2_rechts,off_staander_blad2_onder,off_staander_blad2_links,off_staander_blad3_boven,off_staander_blad3_rechts,off_staander_blad3_onder,off_staander_blad3_links,off_staander_blad4_boven,off_staander_blad4_rechts,off_staander_blad4_onder,off_staander_blad4_links,off_staander_blad5_boven,off_staander_blad5_rechts,off_staander_blad5_onder,off_staander_blad5_links,off_staander_blad6_boven,off_staander_blad6_rechts,off_staander_blad6_onder,off_staander_blad6_links,off_staander_blad7_boven,off_staander_blad7_rechts,off_staander_blad7_onder,off_staander_blad7_links,off_staander_blad8_boven,off_staander_blad8_rechts,off_staander_blad8_onder,off_staander_blad8_links,off_staander_blad9_boven,off_staander_blad9_rechts,off_staander_blad9_onder,off_staander_blad9_links";
 $PgFldList[5]="off_achterwand_plinten,off_rand_achter_blad1_boven,off_rand_achter_blad1_rechts,off_rand_achter_blad1_onder,off_rand_achter_blad1_links,off_rand_achter_blad2_boven,off_rand_achter_blad2_rechts,off_rand_achter_blad2_onder,off_rand_achter_blad2_links,off_rand_achter_blad3_boven,off_rand_achter_blad3_rechts,off_rand_achter_blad3_onder,off_rand_achter_blad3_links,off_rand_achter_blad4_boven,off_rand_achter_blad4_rechts,off_rand_achter_blad4_onder,off_rand_achter_blad4_links,off_rand_achter_blad5_boven,off_rand_achter_blad5_rechts,off_rand_achter_blad5_onder,off_rand_achter_blad5_links,off_rand_achter_blad6_boven,off_rand_achter_blad6_rechts,off_rand_achter_blad6_onder,off_rand_achter_blad6_links,off_rand_achter_blad7_boven,off_rand_achter_blad7_rechts,off_rand_achter_blad7_onder,off_rand_achter_blad7_links,off_rand_achter_blad8_boven,off_rand_achter_blad8_rechts,off_rand_achter_blad8_onder,off_rand_achter_blad8_links,off_rand_achter_blad9_boven,off_rand_achter_blad9_rechts,off_rand_achter_blad9_onder,off_rand_achter_blad9_links";
-$PgFldList[6]="off_dikte,off_kookplaatuitsparing,off_spoelbakuitsparing,off_spoelbaklevering,off_spoelbaktype,off_aantalgaten,off_kraanlevering,off_kraantype,off_inmeten,off_afmonteren,off_opm"; //off_TerrazzoCoating,off_randafwerking,off_opdikken
+$PgFldList[6]="off_type,off_dikte,off_kookplaatuitsparing,off_spoelbakuitsparing,off_spoelbaklevering,off_spoelbaktype,off_aantalgaten,off_kraanlevering,off_kraantype,off_inmeten,off_afmonteren,off_opm"; //off_TerrazzoCoating,off_randafwerking,off_opdikken
 $PgFldList[7]="";
 $PgFldList[8]="off_aanhef,off_naam,off_email,off_adres,off_postcode,off_woonplaats,off_land,off_telefoon,off_bericht";
 
@@ -346,6 +346,33 @@ function fnc_ChkFldInput(&$fldval, $whitelist, $minlen, $maxlen, $label, &$msg) 
 //		=html, output html layout
 //		=email, output email layout
 function fnc_FldDef($mode, $arrTabItems, &$PgFldVal, $page, $fld, &$result, &$msg, &$ContentPg) {
+	$materials = array(
+		"L" => array(
+			"haaks" => array(
+				"title" => "Haaks",
+				"img" => "images/HS_kleur_laminaat/bladen/haaks/VAM32 web.jpg",
+				"dimension" => "mm",
+				"thickness" => array("25", "32", "76"),
+				"thicken" => array("36", "50", "60", "76"),
+				"extra" => array(
+					"abs" => array(
+						"title" => "Rand afwerken met ABSband",
+						"description" => "ABSband is een band van hardmateriaal in de zelfde kleur van het blad. De voorzijde wordt hierdoor veel beter bestand tegen stoten"
+					)
+				)
+			),
+			"waterkering" => array(
+				"title" => "Waterkering",
+				"img" => "images/HS_kleur_laminaat/bladen/haaks/VAM32 web.jpg"
+			),
+			"afgerond" => array(
+				"title" => "Afgerond",
+				"img" => "images/HS_kleur_laminaat/bladen/haaks/VAM32 web.jpg",
+			)
+		)
+	);
+
+
 	$i=0;
 	switch ($fld) {
 	case "off_materiaal":
@@ -1577,6 +1604,45 @@ $ContentPg[$page].='<img id="'.$arrTabItems['css_id']['tabCntContainer'].'_'.$i.
 	case "off_rand_achter_blad9_onder":
 	case "off_rand_achter_blad9_links":
 		break;
+	case "off_type":
+		$val=$PgFldVal[$page][$fld];
+		$fld_materiaal="off_materiaal";
+		$pg=1;
+		$val_materiaal= $PgFldVal[$pg][$fld_materiaal];
+		$msg[$fld]="";
+		$val = array_keys($materials[$val_materiaal])[0];
+
+
+		var_dump($val);
+
+		if($mode == "html" )
+		{
+			$ContentPg[$page].='<tr><td class="FrmTblTdLabel">Werkblad afwerking</td>'.PHP_EOL;
+			$ContentPg[$page].='	<td>';
+
+			if($val_materiaal)
+			{
+				$ContentPg[$page].= '<table border="0" cellpadding="0" cellspacing="0">'.PHP_EOL;
+				foreach($materials[$val_materiaal] as $key => $value)
+				{
+					$checked = NULL;
+					if($val == $key) $checked = "checked ";
+
+					$ContentPg[$page].= '<tr><td style="text-align:left;vertical-align:middle;width:200px">';
+					$ContentPg[$page].= '<input type="radio" name="'. $fld .'" value="' . $key . '" '. $checked .'class="radio" />';
+					$ContentPg[$page].= '&nbsp;' . $value["title"] . '</td><td>';
+					$ContentPg[$page].= '<img src="'.$GLOBALS["own"]["baseurl"] . $value["img"] . '"';
+					$ContentPg[$page].= 'title="geen wandafwerking" style="width:230px;" /></td></tr>'.PHP_EOL;
+				}
+				$ContentPg[$page].='</table>'.PHP_EOL;
+				$ContentPg[$page].=($msg[$fld]>""?$msg[$fld]:NULL).'<br /></td></tr>'.PHP_EOL;
+			}
+			else
+			{
+				var_dump("Geen materiaal gekozen");
+			}
+		}
+		break;
 
 	case "off_dikte":
 		$val=$PgFldVal[$page][$fld];
@@ -1662,82 +1728,6 @@ $ContentPg[$page].='<img id="'.$arrTabItems['css_id']['tabCntContainer'].'_'.$i.
 			$ContentPg[$page].='</td></tr></table>'.PHP_EOL;
 			$ContentPg[$page].='</td></tr>'.PHP_EOL;
 			$ContentPg[$page].='<input type="hidden" name="'.$fld.'" value="'.htmlspecialchars($val).'" />'.PHP_EOL;
-		}
-
-		//Henk
-
-		//&& $name == "Henk"
-		$item = array(
-			"material" => $val_materiaal,
-			"type" => "Haaks"
-		);
-
-		$materials = array(
-			"L" => array(
-				"haaks" => array(
-					"title" => "Haaks",
-					"img" => "images/HS_kleur_laminaat/bladen/haaks/VAM32 web.jpg",
-					"dimension" => "mm",
-					"thickness" => array("25", "32", "76"),
-					"thicken" => array("36", "50", "60", "76"),
-					"extra" => array(
-						"abs" => array(
-							"title" => "Rand afwerken met ABSband",
-							"description" => "ABSband is een band van hardmateriaal in de zelfde kleur van het blad. De voorzijde wordt hierdoor veel beter bestand tegen stoten"
-						)
-					)
-				),
-				"waterkering" => array(
-					"title" => "Waterkering",
-					"img" => "images/HS_kleur_laminaat/bladen/haaks/VAM32 web.jpg"
-				),
-				"afgerond" => array(
-					"title" => "Afgerond",
-					"img" => "images/HS_kleur_laminaat/bladen/haaks/VAM32 web.jpg",
-				)
-			)
-		);
-
-		if($mode == "html" )
-		{
-			$ContentPg[$page].='<tr><td class="FrmTblTdLabel">Werkblad afwerking</td>'.PHP_EOL;
-			$ContentPg[$page].='	<td>';
-
-			if($val_materiaal)
-			{
-				$ContentPg[$page].= '<table border="0" cellpadding="0" cellspacing="0">'.PHP_EOL;
-				foreach($materials[$item["material"]] as $key => $value)
-				{
-
-					$ContentPg[$page].= '<tr><td style="text-align:left;vertical-align:middle;width:200px">';
-					$ContentPg[$page].= '<input type="radio" name="'.$fld.'" value="" '.($val==""?'checked="checked" ':NULL).'class="radio" />';
-					$ContentPg[$page].= '&nbsp;' . $value["title"] . '</td><td>';
-					$ContentPg[$page].= '<img src="'.$GLOBALS["own"]["baseurl"] . $value["img"] . '"';
-					$ContentPg[$page].= 'title="geen wandafwerking" style="width:230px;" /></td></tr>'.PHP_EOL;
-				}
-				$ContentPg[$page].='</table>'.PHP_EOL;
-			}
-			else
-			{
-				var_dump("Geen materiaal gekozen");
-			}
-
-
-
-
-
-
-			$ContentPg[$page].='<table border="0" cellpadding="0" cellspacing="0">'.PHP_EOL;
-			$ContentPg[$page].='<tr><td style="text-align:left;vertical-align:middle;width:200px"><input type="radio" name="'.$fld.'" value="" '.($val==""?'checked="checked" ':NULL).'class="radio" />&nbsp;Geen&nbsp;plint&nbsp;of&nbsp;achterwand</td><td><img src="'.$GLOBALS["own"]["baseurl"].'images/stap6/geen-achterwand-plint.jpg" title="geen wandafwerking" style="width:230px;" /></td></tr>'.PHP_EOL;
-
-			$ContentPg[$page].='<tr height="10px"><td colspan="2"></td></tr>'.PHP_EOL;
-			$ContentPg[$page].='<tr><td style="text-align:left;vertical-align:middle;"><input type="radio" name="'.$fld.'" value="P" '.($val=="P"?'checked="checked" ':NULL).'class="radio" />&nbsp;Plint</td><td><img src="'.$GLOBALS["own"]["baseurl"].'images/stap6/plinten.jpg" title="wandafwerking met plint" style="width:230px;" /></td></tr>'.PHP_EOL;
-
-			$ContentPg[$page].='<tr height="10px"><td colspan="2"></td></tr>'.PHP_EOL;
-			$ContentPg[$page].='<tr><td style="text-align:left;vertical-align:middle;"><input type="radio" name="'.$fld.'" value="A" '.($val=="A"?'checked="checked" ':NULL).'class="radio" />&nbsp;Achterwand</td><td><img src="'.$GLOBALS["own"]["baseurl"].'images/stap6/achterwand.jpg" title="wandafwerking met achterwand" style="width:230px;" /></td></tr>'.PHP_EOL;
-
-			$ContentPg[$page].='</table>'.PHP_EOL;
-			$ContentPg[$page].=($msg[$fld]>""?$msg[$fld]:NULL).'<br /></td></tr>'.PHP_EOL;
 		}
 
 		if ($mode=="html") {
