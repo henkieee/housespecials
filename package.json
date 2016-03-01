@@ -9,8 +9,5 @@
   "author": "Henk van Rooijen",
   "license": "ISC",
   "dependencies": {
-    "browser-sync": "^2.9.3",
-    "gulp": "^3.9.0",
-    "gulp-connect-php": "0.0.7"
   }
 }
