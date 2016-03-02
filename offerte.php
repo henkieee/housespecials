@@ -405,9 +405,9 @@ $arrTabItems_Kraan['css_id']['tabCntContainer']='tabCnt_Kraan';
 								"haaks" => array(
 									"title" => "Haaks",
 									"img" => "images/HS_kleur_laminaat/bladen/haaks/VAM32 web.jpg",
-									"dimension" => "mm",
-									"thickness" => array("25"),
-									"thicken" => array("32", "38")
+									"dimension" => "cm",
+									"thickness" => array("4"),
+									"thicken" => array("5", "6", "8", "10")
 								)
 							)
 						);
@@ -1706,8 +1706,8 @@ $arrTabItems_Kraan['css_id']['tabCntContainer']='tabCnt_Kraan';
 
 								$val_materiaal=$PgFldVal[$pg][$fld_materiaal];
 								$pg=3;
-
-								var_dump($PgFldVal[$pg]["off_type"]);
+								$type = $PgFldVal[$pg]["off_type"];
+								var_dump($type);
 								$val_unit="cm";
 								//$fld_opdikken="off_opdikken";
 								//$val_opdikken=$PgFldVal[$pg][$fld_opdikken]; //WARNING: field value is not checked yet
@@ -1718,6 +1718,55 @@ $arrTabItems_Kraan['css_id']['tabCntContainer']='tabCnt_Kraan';
 									$minlen=1;
 									$maxlen=2;
 									$val_default="";
+
+//									"L" => array(
+//									"haaks" => array(
+//										"title" => "Haaks",
+//										"img" => "images/HS_kleur_laminaat/bladen/haaks/VAM32 web.jpg",
+//										"dimension" => "mm",
+//										"thickness" => array("25", "32", "76"),
+//										"thicken" => array("36", "50", "60", "76"),
+//										"extra" => array(
+//											"abs" => array(
+//												"title" => "Rand afwerken met ABSband",
+//												"description" => "ABSband is een band van hardmateriaal in de zelfde kleur van het blad. De voorzijde wordt hierdoor veel beter bestand tegen stoten"
+//											)
+//										)
+//									),
+//									"waterkering" => array(
+//										"title" => "Waterkering",
+//										"img" => "images/HS_kleur_laminaat/bladen/haaks/VAM32 web.jpg"
+//									),
+//									"afgerond" => array(
+//										"title" => "Afgerond",
+//										"img" => "images/HS_kleur_laminaat/bladen/haaks/VAM32 web.jpg",
+//									)
+//								),
+
+									if(! $val_materiaal)
+									{
+
+									}
+									else
+									{
+										//$type
+										if(! $type && ! $val) $val = $materials[$val_materiaal][0]['thickness'][0];
+										else
+										{
+											$materialTypeContent = $materials[$val_materiaal][$type];
+											$val_default = $materials[$val_materiaal][$type]['thickness'][0];
+											$val_unit= $materialTypeContent['dimension'];
+
+											if ($val=="") $val=$val_default;
+											if (! in_array($val, $materialTypeContent['thickness'])) $val = "";
+
+											$minlen=2;
+											$maxlen=2;
+										}
+									}
+
+
+
 									switch ($val_materiaal)
 									{
 										case "BC":
@@ -1801,7 +1850,8 @@ $arrTabItems_Kraan['css_id']['tabCntContainer']='tabCnt_Kraan';
 									$ContentPg[$page].='<input type="hidden" name="'.$fld.'" value="'.htmlspecialchars($val).'" />'.PHP_EOL;
 								}
 
-								if ($mode=="html") {
+								if ($mode=="html")
+								{
 									$ContentPg[$page].='<tr><td class="FrmTblTdLabel" style="vertical-align:middle;">Dikte werkblad:</td>'.PHP_EOL;
 									$ContentPg[$page].='	<td>';
 									switch ($val_materiaal) {
@@ -1864,7 +1914,8 @@ $arrTabItems_Kraan['css_id']['tabCntContainer']='tabCnt_Kraan';
 											$ContentPg[$page].='</table>'.PHP_EOL;
 											break;
 										default: //unknown/illegal value
-											$msg[$fld]='<font color="#FF0000">De dikte is onbepaald, kies eerst het materiaal en de kleur in stap 1.</font>';
+											$msg[$fld].='<font color="#FF0000">De dikte is onbepaald, kies eerst het materiaal en de kleur in stap 1.</font>';
+											if(! $type) $msg[$fld].='<br /><font color="#FF0000">Kies daarna een type werkblad in stap 3.</font>';
 									}
 									$ContentPg[$page].=($msg[$fld]>""?$msg[$fld].'<br />':NULL).'</td></tr>'.PHP_EOL;
 									if ($mode!="html") $ContentPg[$page].='<input type="hidden" name="'.$fld.'" value="'.htmlspecialchars($val).'" />'.PHP_EOL;
