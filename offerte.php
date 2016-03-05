@@ -56,7 +56,7 @@ $PgFldList[3]="off_type";
 $PgFldList[4]="off_rand_zichtbaar_blad1_boven,off_rand_zichtbaar_blad1_rechts,off_rand_zichtbaar_blad1_onder,off_rand_zichtbaar_blad1_links,off_rand_zichtbaar_blad2_boven,off_rand_zichtbaar_blad2_rechts,off_rand_zichtbaar_blad2_onder,off_rand_zichtbaar_blad2_links,off_rand_zichtbaar_blad3_boven,off_rand_zichtbaar_blad3_rechts,off_rand_zichtbaar_blad3_onder,off_rand_zichtbaar_blad3_links,off_rand_zichtbaar_blad4_boven,off_rand_zichtbaar_blad4_rechts,off_rand_zichtbaar_blad4_onder,off_rand_zichtbaar_blad4_links,off_rand_zichtbaar_blad5_boven,off_rand_zichtbaar_blad5_rechts,off_rand_zichtbaar_blad5_onder,off_rand_zichtbaar_blad5_links,off_rand_zichtbaar_blad6_boven,off_rand_zichtbaar_blad6_rechts,off_rand_zichtbaar_blad6_onder,off_rand_zichtbaar_blad6_links,off_rand_zichtbaar_blad7_boven,off_rand_zichtbaar_blad7_rechts,off_rand_zichtbaar_blad7_onder,off_rand_zichtbaar_blad7_links,off_rand_zichtbaar_blad8_boven,off_rand_zichtbaar_blad8_rechts,off_rand_zichtbaar_blad8_onder,off_rand_zichtbaar_blad8_links,off_rand_zichtbaar_blad9_boven,off_rand_zichtbaar_blad9_rechts,off_rand_zichtbaar_blad9_onder,off_rand_zichtbaar_blad9_links";
 $PgFldList[5]="off_staander,off_staander_blad1_boven,off_staander_blad1_rechts,off_staander_blad1_onder,off_staander_blad1_links,off_staander_blad2_boven,off_staander_blad2_rechts,off_staander_blad2_onder,off_staander_blad2_links,off_staander_blad3_boven,off_staander_blad3_rechts,off_staander_blad3_onder,off_staander_blad3_links,off_staander_blad4_boven,off_staander_blad4_rechts,off_staander_blad4_onder,off_staander_blad4_links,off_staander_blad5_boven,off_staander_blad5_rechts,off_staander_blad5_onder,off_staander_blad5_links,off_staander_blad6_boven,off_staander_blad6_rechts,off_staander_blad6_onder,off_staander_blad6_links,off_staander_blad7_boven,off_staander_blad7_rechts,off_staander_blad7_onder,off_staander_blad7_links,off_staander_blad8_boven,off_staander_blad8_rechts,off_staander_blad8_onder,off_staander_blad8_links,off_staander_blad9_boven,off_staander_blad9_rechts,off_staander_blad9_onder,off_staander_blad9_links";
 $PgFldList[6]="off_achterwand_plinten,off_rand_achter_blad1_boven,off_rand_achter_blad1_rechts,off_rand_achter_blad1_onder,off_rand_achter_blad1_links,off_rand_achter_blad2_boven,off_rand_achter_blad2_rechts,off_rand_achter_blad2_onder,off_rand_achter_blad2_links,off_rand_achter_blad3_boven,off_rand_achter_blad3_rechts,off_rand_achter_blad3_onder,off_rand_achter_blad3_links,off_rand_achter_blad4_boven,off_rand_achter_blad4_rechts,off_rand_achter_blad4_onder,off_rand_achter_blad4_links,off_rand_achter_blad5_boven,off_rand_achter_blad5_rechts,off_rand_achter_blad5_onder,off_rand_achter_blad5_links,off_rand_achter_blad6_boven,off_rand_achter_blad6_rechts,off_rand_achter_blad6_onder,off_rand_achter_blad6_links,off_rand_achter_blad7_boven,off_rand_achter_blad7_rechts,off_rand_achter_blad7_onder,off_rand_achter_blad7_links,off_rand_achter_blad8_boven,off_rand_achter_blad8_rechts,off_rand_achter_blad8_onder,off_rand_achter_blad8_links,off_rand_achter_blad9_boven,off_rand_achter_blad9_rechts,off_rand_achter_blad9_onder,off_rand_achter_blad9_links";
-$PgFldList[7]="off_dikte,off_kookplaatuitsparing,off_spoelbakuitsparing,off_spoelbaklevering,off_spoelbaktype,off_aantalgaten,off_kraanlevering,off_kraantype,off_inmeten,off_afmonteren,off_opm"; //off_TerrazzoCoating,off_randafwerking,off_opdikken
+$PgFldList[7]="off_dikte,off_abs,off_kookplaatuitsparing,off_spoelbakuitsparing,off_spoelbaklevering,off_spoelbaktype,off_aantalgaten,off_kraanlevering,off_kraantype,off_inmeten,off_bladverwijderen,off_afmonteren,off_opm"; //off_TerrazzoCoating,off_randafwerking,off_opdikken
 $PgFldList[8]="";
 $PgFldList[9]="off_aanhef,off_naam,off_email,off_adres,off_postcode,off_woonplaats,off_land,off_telefoon,off_bericht";
 
@@ -368,7 +368,7 @@ $arrTabItems_Kraan['css_id']['tabCntContainer']='tabCnt_Kraan';
 									"title" => "Haaks",
 									"img" => "images/HS_kleur_laminaat/bladen/haaks/VAM32 web.jpg",
 									"dimension" => "mm",
-									"thickness" => array("25", "32", "76"),
+									"thickness" => array("25", "32", "38"),
 									"thicken" => array("36", "50", "60", "76"),
 									"extra" => array(
 										"abs" => array(
@@ -379,11 +379,15 @@ $arrTabItems_Kraan['css_id']['tabCntContainer']='tabCnt_Kraan';
 								),
 								"waterkering" => array(
 									"title" => "Waterkering",
-									"img" => "images/HS_kleur_laminaat/bladen/haaks/VAM32 web.jpg"
+									"dimension" => "mm",
+									"img" => "images/HS_kleur_laminaat/bladen/haaks/VAM32 web.jpg",
+									"thickness" => array("32", "38")
 								),
 								"afgerond" => array(
 									"title" => "Afgerond",
+									"dimension" => "mm",
 									"img" => "images/HS_kleur_laminaat/bladen/haaks/VAM32 web.jpg",
+									"thickness" => array("32", "38")
 								)
 							),
 							"Graniet" => array(
@@ -432,7 +436,8 @@ $arrTabItems_Kraan['css_id']['tabCntContainer']='tabCnt_Kraan';
 								$val_materiaal=$PgFldVal[$page][$fld_materiaal];
 								$fld_kleur="off_kleur";
 								$val_kleur=$PgFldVal[$page][$fld_kleur];
-								if ($fld==$fld_materiaal) {
+								if ($fld==$fld_materiaal)
+								{
 									if ($mode=="init" || $mode=="ctrl") {
 										$msg[$fld]="";
 										if ($mode=="ctrl") { //materiaal is required
@@ -1656,7 +1661,7 @@ $arrTabItems_Kraan['css_id']['tabCntContainer']='tabCnt_Kraan';
 							case "off_rand_achter_blad9_links":
 								break;
 							case "off_type":
-								//
+								//jaja
 								$val=$PgFldVal[$page][$fld];
 								$fld_materiaal="off_materiaal";
 								$pg=1;
@@ -1667,9 +1672,13 @@ $arrTabItems_Kraan['css_id']['tabCntContainer']='tabCnt_Kraan';
 								{
 									if($val_materiaal)
 									{
-										if(! $val)
+										//check if the type is empty or if the type doesn't exist in combi with the chosen material
+										if(!$val || ($val && ! array_key_exists($val, $materials[$val_materiaal]) ))
 										{
+											//set default type
 											$val = array_keys($materials[$val_materiaal])[0];
+											//set default thickness
+											$PgFldVal[7]['off_dikte'] = $materials[$val_materiaal][$val]['thickness'][0];
 										}
 
 										$ContentPg[$page].='<tr><td class="FrmTblTdLabel">Werkblad afwerking:</td>'.PHP_EOL;
@@ -1698,8 +1707,7 @@ $arrTabItems_Kraan['css_id']['tabCntContainer']='tabCnt_Kraan';
 									$ContentPg[$page].=($msg[$fld]>""?$msg[$fld]:NULL).'<br /></td></tr>'.PHP_EOL;
 								}
 								break;
-
-							case "off_dikte":
+							case "off_abs":
 								$val=$PgFldVal[$page][$fld];
 								$pg=1;
 								$fld_materiaal="off_materiaal";
@@ -1707,7 +1715,39 @@ $arrTabItems_Kraan['css_id']['tabCntContainer']='tabCnt_Kraan';
 								$val_materiaal=$PgFldVal[$pg][$fld_materiaal];
 								$pg=3;
 								$type = $PgFldVal[$pg]["off_type"];
-								var_dump($type);
+
+								if($type == 'haaks')
+								{
+									$val=$PgFldVal[$page][$fld];
+									if ($mode=="init" || $mode=="ctrl") {
+										$msg[$fld]="";
+										if(! $val) $val = 'N';
+
+										$whitelist="JN";
+										if ($mode=="ctrl") fnc_ChkFldInput($val, $whitelist, 1, 1, "Rand afwerken met ABSband", $msg[$fld]);
+										$PgFldVal[$page][$fld]=$val;
+									}
+									if ($mode=="html" || $mode=="email") {
+										$ContentPg[$page].='<tr><td class="FrmTblTdLabel">Rand afwerken met ABSband:<div class="HelpIcon" title="ABSband is een band van hardmateriaal in dezelfde kleur van het blad. De voorzijde wordt hierdoor veel beter bestand tegen stoten"></div>'.PHP_EOL;
+										$ContentPg[$page].= '<br /><span style="color: red;">* Deze keuze is alleen mogelijk bij een haakse voorzijde</span></td>';
+										$ContentPg[$page].='	<td><input type="radio" name="'. $fld.'" value="N" '.($val=="N"?'checked="checked" ':NULL).'class="radio" />&nbsp;Nee&nbsp;&nbsp;&nbsp;';
+										$ContentPg[$page].='<input type="radio" name="'. $fld.'" value="J" '.($val=="J"?'checked="checked" ':NULL).'class="radio" />&nbsp;Ja'.($msg[$fld]>""?$msg[$fld].'<br />':NULL).'</td></tr>'.PHP_EOL;
+										if ($mode!="html") $ContentPg[$page].='<input type="hidden" name="'.$fld.'" value="'.htmlspecialchars($val).'" />'.PHP_EOL;
+									}
+									break;
+								}
+
+								break;
+							case "off_dikte":
+								$val=$PgFldVal[$page][$fld];
+
+								$pg=1;
+								$fld_materiaal="off_materiaal";
+
+								$val_materiaal=$PgFldVal[$pg][$fld_materiaal];
+								$pg=3;
+								$type = $PgFldVal[$pg]["off_type"];
+
 								$val_unit="cm";
 								//$fld_opdikken="off_opdikken";
 								//$val_opdikken=$PgFldVal[$pg][$fld_opdikken]; //WARNING: field value is not checked yet
@@ -1719,46 +1759,36 @@ $arrTabItems_Kraan['css_id']['tabCntContainer']='tabCnt_Kraan';
 									$maxlen=2;
 									$val_default="";
 
-//									"L" => array(
-//									"haaks" => array(
-//										"title" => "Haaks",
-//										"img" => "images/HS_kleur_laminaat/bladen/haaks/VAM32 web.jpg",
-//										"dimension" => "mm",
-//										"thickness" => array("25", "32", "76"),
-//										"thicken" => array("36", "50", "60", "76"),
-//										"extra" => array(
-//											"abs" => array(
-//												"title" => "Rand afwerken met ABSband",
-//												"description" => "ABSband is een band van hardmateriaal in de zelfde kleur van het blad. De voorzijde wordt hierdoor veel beter bestand tegen stoten"
-//											)
-//										)
-//									),
-//									"waterkering" => array(
-//										"title" => "Waterkering",
-//										"img" => "images/HS_kleur_laminaat/bladen/haaks/VAM32 web.jpg"
-//									),
-//									"afgerond" => array(
-//										"title" => "Afgerond",
-//										"img" => "images/HS_kleur_laminaat/bladen/haaks/VAM32 web.jpg",
-//									)
-//								),
-
-									if(! $val_materiaal)
-									{
-
-									}
+									if(! $val_materiaal) $val = "";
 									else
 									{
+										$currentMaterial = $materials[$val_materiaal];
+
 										//$type
-										if(! $type && ! $val) $val = $materials[$val_materiaal][0]['thickness'][0];
+										if(! $type) $type = key($currentMaterial);
+										if(! $val) $val = $currentMaterial[$type]['thickness'][0];
 										else
 										{
+											//Check if type exist
+											if(! array_key_exists($type, $materials[$val_materiaal]) )
+											{
+												$type = array_keys($materials[$val_materiaal])[0];
+												$val = $materials[$val_materiaal][$type]['thickness'][0];
+											}
+											else if( ! in_array($val, $materials[$val_materiaal][$type]['thickness']) &&
+												(isset($materials[$val_materiaal][$type]['thicken'])
+													&& ! in_array($val, $materials[$val_materiaal][$type]['thicken'])
+												)//check if the current thickness or thicken exist with the current material and type
+											)
+											{
+												$val = $materials[$val_materiaal][$type]['thickness'][0];
+											}
+
 											$materialTypeContent = $materials[$val_materiaal][$type];
 											$val_default = $materials[$val_materiaal][$type]['thickness'][0];
 											$val_unit= $materialTypeContent['dimension'];
 
 											if ($val=="") $val=$val_default;
-											if (! in_array($val, $materialTypeContent['thickness'])) $val = "";
 
 											$minlen=2;
 											$maxlen=2;
@@ -1766,35 +1796,6 @@ $arrTabItems_Kraan['css_id']['tabCntContainer']='tabCnt_Kraan';
 									}
 
 
-
-									switch ($val_materiaal)
-									{
-										case "BC":
-											//case "BL":
-											//case "T":
-											$val_default="4";
-											if ($val=="") $val=$val_default;
-											if ($val!="4" && $val!="5" && $val!="6" && $val!="8" && $val!="10") $val="";
-											break;
-										case "Graniet":
-											$minlen=2;
-											$maxlen=2;
-											$val_default="25";
-											$val_unit="mm";
-											if ($val=="") $val=$val_default;
-											if ($val!="25" && $val!="32" && $val!="38") $val=""; //note: see special restrictions in case off_randafwerking
-											break;
-										case "L":
-											$minlen=2;
-											$maxlen=2;
-											$val_default="25";
-											$val_unit="mm";
-											if ($val=="") $val=$val_default;
-											if ($val!="25" && $val!="32" && $val!="38") $val=""; //note: see special restrictions in case off_randafwerking
-											break;
-										default: //unknown/illegal value
-											$val="";
-									}
 									if ($mode=="ctrl") fnc_ChkFldInput($val, $whitelist, $minlen, $maxlen, "De dikte", $msg[$fld]);
 									if ($msg[$fld]>"")
 									{
@@ -1813,33 +1814,24 @@ $arrTabItems_Kraan['css_id']['tabCntContainer']='tabCnt_Kraan';
 									$valtxt="";
 									$valimg="";
 									$title="";
-									if ($val!="") {
+
+									if ($val != "" && $type != "")
+									{
 										$val_default="";
 										$val_unit="";
-										switch ($val_materiaal) {
-											case "BC":
-												//case "BL":
-												//case "T":
-												$val_default="4";
-												$val_unit="cm";
-												$valimg=($val==$val_default?"randafwerking_recht":"opdikken_rand");
-												break;
-											case "L":
-												$val_default="25";
-												$val_unit="mm";
-												$valimg=($val==$val_default?"randafwerking_recht":"opdikken_rand");
-												break;
-											case "Graniet":
-												$val_default="25";
-												$val_unit="mm";
-												$valimg=($val==$val_default?"randafwerking_recht":"opdikken_rand");
-												break;
-										}
+
+										$materialTypeContent = $materials[$val_materiaal][$type];
+										$val_default = $materialTypeContent['thickness'][0];
+										$val_unit= $materialTypeContent['dimension'];
+										$valimg=($val==$val_default?"randafwerking_recht":"opdikken_rand");
+
 										$valtxt=$val." ".$val_unit;
+
 										if ($valimg>"") {
 											$title=($val==$val_default?"standaard werkblad":"opgedikte rand werkblad");
 										}
 									}
+
 									$ContentPg[$page].='<tr><td class="FrmTblTdLabel">Dikte werkblad:</td>'.PHP_EOL;
 									$ContentPg[$page].='	<td>';
 									$ContentPg[$page].='<table border="0" cellpadding="0" cellspacing="0">'.PHP_EOL;
@@ -1854,69 +1846,46 @@ $arrTabItems_Kraan['css_id']['tabCntContainer']='tabCnt_Kraan';
 								{
 									$ContentPg[$page].='<tr><td class="FrmTblTdLabel" style="vertical-align:middle;">Dikte werkblad:</td>'.PHP_EOL;
 									$ContentPg[$page].='	<td>';
-									switch ($val_materiaal) {
-										case "BC":
-											//case "BL":
-											//case "T":
-											$val_unit="cm";
-											$ContentPg[$page].='<table border="0" cellpadding="0" cellspacing="0">'.PHP_EOL;
-											$ContentPg[$page].='<tr><td style="text-align:left;vertical-align:middle;width:180px">';
-											$ContentPg[$page].='<input type="radio" name="'.$fld.'" value="4" '.($val=="4"?'checked="checked" ':NULL).'onclick="check_thickening();" class="radio" />&nbsp;4&nbsp;'.$val_unit.'&nbsp;(standaard)&nbsp;&nbsp;&nbsp;';
-											$ContentPg[$page].='</td><td><img src="'.$GLOBALS["own"]["baseurl"].'images/randafwerking_recht.jpg" title="standaard werkblad" style="width:100px;height:50px;" /></td></tr>'.PHP_EOL;
-											$ContentPg[$page].='</table>'.PHP_EOL;
-											$ContentPg[$page].='</td></tr>'.PHP_EOL;
 
-											$ContentPg[$page].='<tr><td class="FrmTblTdLabel">Opgedikt naar<div class="HelpIcon" title="De bladen worden niet massief gemaakt. De randen worden alleen opgedikt"></div></td>'.PHP_EOL;
-											$ContentPg[$page].='	<td>';
-											$ContentPg[$page].='<table border="0" cellpadding="0" cellspacing="0">'.PHP_EOL;
-											$ContentPg[$page].='<tr><td style="text-align:left;vertical-align:middle;width:180px">';
-											$ContentPg[$page].='<input type="radio" name="'.$fld.'" value="5" '.($val=="5"?'checked="checked" ':NULL).'onclick="check_thickening();" class="radio" />&nbsp;5&nbsp;'.$val_unit.'&nbsp;&nbsp;&nbsp;';
-											$ContentPg[$page].='<input type="radio" name="'.$fld.'" value="6" '.($val=="6"?'checked="checked" ':NULL).'onclick="check_thickening();" class="radio" />&nbsp;6&nbsp;'.$val_unit.'<br />';
-											$ContentPg[$page].='<input type="radio" name="'.$fld.'" value="8" '.($val=="8"?'checked="checked" ':NULL).'onclick="check_thickening();" class="radio" />&nbsp;8&nbsp;'.$val_unit.'&nbsp;&nbsp;&nbsp;';
-											$ContentPg[$page].='<input type="radio" name="'.$fld.'" value="10" '.($val=="10"?'checked="checked" ':NULL).'onclick="check_thickening();" class="radio" />&nbsp;10&nbsp;'.$val_unit.'&nbsp;&nbsp;&nbsp;';
-											$ContentPg[$page].='</td><td><img src="'.$GLOBALS["own"]["baseurl"].'images/opdikken_rand.jpg" title="opgedikte rand werkblad" style="width:100px;height:50px;" /></td></tr>'.PHP_EOL;
-											$ContentPg[$page].='</table>'.PHP_EOL;
-											break;
-										case "L":
-											$val_unit="mm";
-											$ContentPg[$page].='<table border="0" cellpadding="0" cellspacing="0">'.PHP_EOL;
-											$ContentPg[$page].='<tr><td style="text-align:left;vertical-align:middle;width:180px">';
-											$ContentPg[$page].='<input type="radio" name="'.$fld.'" value="25" '.($val=="25"?'checked="checked" ':NULL).'onclick="check_thickening();" class="radio" />&nbsp;25&nbsp;'.$val_unit.'&nbsp;(standaard)&nbsp;&nbsp;&nbsp;';
-											$ContentPg[$page].='</td><td><img src="'.$GLOBALS["own"]["baseurl"].'images/randafwerking_recht.jpg" title="standaard werkblad" style="width:100px;height:50px;" /></td></tr>'.PHP_EOL;
-											$ContentPg[$page].='</table>'.PHP_EOL;
-											$ContentPg[$page].='</td></tr>'.PHP_EOL;
+									if(! $val_materiaal) $msg[$fld].='<font color="#FF0000">De dikte is onbepaald, kies eerst het materiaal en de kleur in stap 1.</font>';
+									else if(! $type) $msg[$fld].='<br /><font color="#FF0000">De dikte is onbepaald, kies eerst een type werkblad in stap 3.</font>';
+									else
+									{
+										if(! array_key_exists($type, $materials[$val_materiaal]) ) $type = array_keys($materials[$val_materiaal])[0];
 
-											$ContentPg[$page].='<tr><td class="FrmTblTdLabel">Opgedikt naar</td>'.PHP_EOL;
-											$ContentPg[$page].='	<td>';
-											$ContentPg[$page].='<table border="0" cellpadding="0" cellspacing="0">'.PHP_EOL;
-											$ContentPg[$page].='<tr><td style="text-align:left;vertical-align:middle;width:180px">';
-											$ContentPg[$page].='<input type="radio" name="'.$fld.'" value="32" '.($val=="32"?'checked="checked" ':NULL).'onclick="check_thickening();" class="radio" />&nbsp;32&nbsp;'.$val_unit.'&nbsp;&nbsp;&nbsp;';
-											$ContentPg[$page].='<input type="radio" name="'.$fld.'" value="38" '.($val=="38"?'checked="checked" ':NULL).'onclick="check_thickening();" class="radio" />&nbsp;38&nbsp;'.$val_unit.'&nbsp;&nbsp;&nbsp;';
-											$ContentPg[$page].='</td><td><img src="'.$GLOBALS["own"]["baseurl"].'images/opdikken_rand.jpg" title="opgedikte rand werkblad" style="width:100px;height:50px;" /></td></tr>'.PHP_EOL;
-											$ContentPg[$page].='</table>'.PHP_EOL;
-											break;
-										case "Graniet":
-											$val_unit="mm";
-											$ContentPg[$page].='<table border="0" cellpadding="0" cellspacing="0">'.PHP_EOL;
-											$ContentPg[$page].='<tr><td style="text-align:left;vertical-align:middle;width:180px">';
-											$ContentPg[$page].='<input type="radio" name="'.$fld.'" value="25" '.($val=="25"?'checked="checked" ':NULL).'onclick="check_thickening();" class="radio" />&nbsp;25&nbsp;'.$val_unit.'&nbsp;(standaard)&nbsp;&nbsp;&nbsp;';
-											$ContentPg[$page].='</td><td><img src="'.$GLOBALS["own"]["baseurl"].'images/randafwerking_recht.jpg" title="standaard werkblad" style="width:100px;height:50px;" /></td></tr>'.PHP_EOL;
-											$ContentPg[$page].='</table>'.PHP_EOL;
-											$ContentPg[$page].='</td></tr>'.PHP_EOL;
+										$materialTypeContent = $materials[$val_materiaal][$type];
+										$val_unit= $materialTypeContent['dimension'];
 
-											$ContentPg[$page].='<tr><td class="FrmTblTdLabel">Opgedikt naar</td>'.PHP_EOL;
-											$ContentPg[$page].='	<td>';
-											$ContentPg[$page].='<table border="0" cellpadding="0" cellspacing="0">'.PHP_EOL;
-											$ContentPg[$page].='<tr><td style="text-align:left;vertical-align:middle;width:180px">';
-											$ContentPg[$page].='<input type="radio" name="'.$fld.'" value="32" '.($val=="32"?'checked="checked" ':NULL).'onclick="check_thickening();" class="radio" />&nbsp;32&nbsp;'.$val_unit.'&nbsp;&nbsp;&nbsp;';
-											$ContentPg[$page].='<input type="radio" name="'.$fld.'" value="38" '.($val=="38"?'checked="checked" ':NULL).'onclick="check_thickening();" class="radio" />&nbsp;38&nbsp;'.$val_unit.'&nbsp;&nbsp;&nbsp;';
-											$ContentPg[$page].='</td><td><img src="'.$GLOBALS["own"]["baseurl"].'images/opdikken_rand.jpg" title="opgedikte rand werkblad" style="width:100px;height:50px;" /></td></tr>'.PHP_EOL;
+										$ContentPg[$page].='<table border="0" cellpadding="0" cellspacing="0">'.PHP_EOL;
+										$ContentPg[$page].='<tr><td style="text-align:left;vertical-align:middle;width:180px;display:inline;">';
+
+										foreach ($materialTypeContent['thickness'] as $size)
+										{
+											$ContentPg[$page].='<input type="radio" name="'.$fld.'" value="' . $size . '" '.($val==$size ?'checked="checked" ':NULL).'onclick="check_thickening();" class="radio" />&nbsp;' . $size . '&nbsp;'.$val_unit.'&nbsp;&nbsp;';
+										}
+
+										$ContentPg[$page].='</td><td><img src="'.$GLOBALS["own"]["baseurl"].'images/randafwerking_recht.jpg" title="standaard werkblad" style="width:100px;height:50px;" /></td></tr>'.PHP_EOL;
+										$ContentPg[$page].='</table>'.PHP_EOL;
+										$ContentPg[$page].='</td></tr>'.PHP_EOL;
+														//
+										if(isset($materialTypeContent['thicken']))
+										{
+
+											$ContentPg[$page] .= '<tr><td class="FrmTblTdLabel">Opgedikt naar</td>' . PHP_EOL;
+											$ContentPg[$page] .= '	<td>';
+											$ContentPg[$page] .= '<table border="0" cellpadding="0" cellspacing="0">' . PHP_EOL;
+											$ContentPg[$page] .= '<tr><td style="text-align:left;vertical-align:middle;width: 180px; display: inline;">';
+											foreach ($materialTypeContent['thicken'] as $size)
+											{
+												$ContentPg[$page] .= '<input type="radio" name="' . $fld . '" value="' . $size . '" ' . ($val == $size ? 'checked="checked" ' : NULL) . 'onclick="check_thickening();" class="radio" />&nbsp;' . $size . '&nbsp;' . $val_unit . '&nbsp;&nbsp;';
+											}
+
+											$ContentPg[$page] .= '</td><td><img src="' . $GLOBALS["own"]["baseurl"] . 'images/opdikken_rand.jpg" title="opgedikte rand werkblad" style="width:100px;height:50px;" /></td></tr>' . PHP_EOL;
 											$ContentPg[$page].='</table>'.PHP_EOL;
-											break;
-										default: //unknown/illegal value
-											$msg[$fld].='<font color="#FF0000">De dikte is onbepaald, kies eerst het materiaal en de kleur in stap 1.</font>';
-											if(! $type) $msg[$fld].='<br /><font color="#FF0000">Kies daarna een type werkblad in stap 3.</font>';
+										}
+
 									}
+
 									$ContentPg[$page].=($msg[$fld]>""?$msg[$fld].'<br />':NULL).'</td></tr>'.PHP_EOL;
 									if ($mode!="html") $ContentPg[$page].='<input type="hidden" name="'.$fld.'" value="'.htmlspecialchars($val).'" />'.PHP_EOL;
 								}
@@ -2633,7 +2602,23 @@ $arrTabItems_Kraan['css_id']['tabCntContainer']='tabCnt_Kraan';
 									if ($mode!="html") $ContentPg[$page].='<input type="hidden" name="'.$fld.'" value="'.htmlspecialchars($val).'" />'.PHP_EOL;
 								}
 								break;
+							case "off_bladverwijderen":
+								$val=$PgFldVal[$page][$fld];
 
+								if ($mode=="init" || $mode=="ctrl") {
+									$msg[$fld]="";
+									$whitelist="JN";
+									if ($mode=="ctrl") fnc_ChkFldInput($val, $whitelist, 1, 1, "Bestaand blad verwijderen ", $msg[$fld]);
+									if ($msg[$fld]>"") {$msg[$fld]='<br />'.$msg[$fld]; $result=FALSE;}
+									$PgFldVal[$page][$fld]=$val;
+								}
+								if ($mode=="html" || $mode=="proposal" || $mode=="email") {
+									$ContentPg[$page].='<tr><td class="FrmTblTdLabel">Bestaand blad verwijderen:</td>'.PHP_EOL;
+									$ContentPg[$page].='	<td><input type="radio" name="'.($mode=="html"?NULL:'tmp_').$fld.'" value="N" '.($val=="N"?'checked="checked" ':NULL).($mode=="html"?NULL:'disabled="disabled" ').'class="radio" />&nbsp;Nee&nbsp;&nbsp;&nbsp;';
+									$ContentPg[$page].='<input type="radio" name="'.($mode=="html"?NULL:'tmp_').$fld.'" value="J" '.($val=="J"?'checked="checked" ':NULL).($mode=="html"?NULL:'disabled="disabled" ').'class="radio" />&nbsp;Ja'.($msg[$fld]>""?$msg[$fld].'<br />':NULL).'</td></tr>'.PHP_EOL;
+									if ($mode!="html") $ContentPg[$page].='<input type="hidden" name="'.$fld.'" value="'.htmlspecialchars($val).'" />'.PHP_EOL;
+								}
+								break;
 							case "off_opm":
 								$val=$PgFldVal[$page][$fld];
 								if ($mode=="init" || $mode=="ctrl") {
@@ -2783,7 +2768,13 @@ $arrTabItems_Kraan['css_id']['tabCntContainer']='tabCnt_Kraan';
 								}
 								if ($mode=="html" || $mode=="email") {
 									$ContentPg[$page].='<tr><td class="FrmTblTdLabel">De landcode:</td>'.PHP_EOL;
-									$ContentPg[$page].='	<td><input type="text" name="'.$fld.'" value="'.htmlspecialchars($val).'" class="boxlook_content" style="width:40px" />'.($msg[$fld]>""?$msg[$fld]:NULL).'<br /></td></tr>'.PHP_EOL;
+									//$ContentPg[$page].='	<td><input type="text" name="'.$fld.'" value="'.htmlspecialchars($val).'" class="boxlook_content" style="width:40px" />'.($msg[$fld]>""?$msg[$fld]:NULL).'<br /></td></tr>'.PHP_EOL;
+									$ContentPg[$page].='	<td valign="top" width="80px"><select name="'.$fld.'" class="boxlook_content">'.PHP_EOL;
+									$ContentPg[$page].='				<option value="" '.($val==""?'selected="selected"':NULL).'></option>'.PHP_EOL;
+									$ContentPg[$page].='				<option value="NL" '.($val=="NL"?'selected="selected"':NULL).'>Nederland</option>'.PHP_EOL;
+									$ContentPg[$page].='				<option value="BE" '.($val=="BE"?'selected="selected"':NULL).'>Belgie</option>'.PHP_EOL;
+									$ContentPg[$page].='				<option value="DE" '.($val=="DE"?'selected="selected"':NULL).'>Duitsland</option>'.PHP_EOL;
+									$ContentPg[$page].='			</select><br /></td></tr>'.PHP_EOL;
 								}
 								break;
 
