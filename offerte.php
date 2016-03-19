@@ -307,7 +307,7 @@ $arrTabItems_MatKlr['cnt']['Graniet']=array(
 	'Hardsteen_Belgisch_Dikte_20_of_30_mm' => 'Hardsteen Belgisch ',
 	'Hardsteen_Toscaans_Dikte_20_of_30_mm' => 'Hardsteen Toscaans ',
 	'Impala_Becker_Dikte_20_of_30_mm' => 'Impala Becker ',
-	'Impala_Indian_Dikte_20' => 'Impala Indian Dikte 20',
+	'Impala_Indian_Dikte_20' => 'Impala Indian',
 	'Indian_Brown_Dikte_20_of_30_mm' => 'Indian Brown ',
 	'Labrador_Vert_Dikte_20_of_30_mm' => 'Labrador Vert ',
 	'Nero_Assoluto_Dikte_20_of_30_mm' => 'Nero Assoluto ',
@@ -696,7 +696,7 @@ $arrTabItems_Kraan['css_id']['tabCntContainer']='tabCnt_Kraan';
 									"img" => "images/haaks.jpg",
 									"dimension" => "mm",
 									"thickness" => array("20"),
-									"thicken" => array("20", "30", "60", "60")
+									"thicken" => array("20", "30", "60", "80")
 								)
 							),
 							'BC'=> array(
@@ -2010,7 +2010,7 @@ $arrTabItems_Kraan['css_id']['tabCntContainer']='tabCnt_Kraan';
 								$pg=3;
 								$type = $PgFldVal[$pg]["off_type"];
 
-								if($type == 'haaks')
+								if($type == 'haaks' && $val_materiaal == "L")
 								{
 									$val=$PgFldVal[$page][$fld];
 									if ($mode=="init" || $mode=="ctrl") {
