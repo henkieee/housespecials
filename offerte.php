@@ -68,21 +68,21 @@ $arrTabItems_MatKlr=array('btn'=>NULL, 'dir'=>array(), 'cnt'=>array(), 'css'=>ar
 //- define the tab page buttons: code => description
 
 $arrTabItems_MatKlr['btn']=array(
-	'BC'=>'HS Beton Classic',
-	'L'=>'HS Laminaat (HPL)',
-//	'Hplhout'=>'HS Hout (HPL)',
-//	'Hplfantasie'=>'HS Fantasie (HPL)',
-//	'Hpluni'=>'HS Uni (HPL)',
-	'Graniet' => 'HS Graniet',
-	'Composiet' => ' HS Composiet ',
-	'Keramiek' => 'HS Keramiek'
+    'BC'=>'HS Beton Classic',
+//    'L'=>'HS Laminaat (HPL)',
+	'Hplhout'=>'HS Hout (HPL)',
+	'Hplfantasie'=>'HS Fantasie (HPL)',
+	'Hpluni'=>'HS Uni (HPL)',
+    'Graniet' => 'HS Graniet',
+    'Composiet' => ' HS Composiet ',
+    'Keramiek' => 'HS Keramiek'
 );
 
 //- define the image (url) base location per tab page
 $arrTabItems_MatKlr['dir']['BC']=$GLOBALS["own"]["baseurl"].'images/HS_kleur_beton/';
 
 //$arrTabItems_MatKlr['dir']['BL']=$GLOBALS["own"]["baseurl"].'images/HS_kleur_beton/';
-$arrTabItems_MatKlr['dir']['L']=$GLOBALS["own"]["baseurl"].'images/HS_kleur_laminaat/';
+//$arrTabItems_MatKlr['dir']['L']=$GLOBALS["own"]["baseurl"].'images/HS_kleur_laminaat/';
 
 $arrTabItems_MatKlr['dir']['Graniet']=$GLOBALS["own"]["baseurl"].'images/HS_kleur_graniet/';
 
@@ -99,139 +99,139 @@ $arrTabItems_MatKlr['dir']['Hpluni']=$GLOBALS["own"]["baseurl"].'images/HS_kleur
 //$arrTabItems_MatKlr['cnt']['BC']=array('article19601974'=>'HSB 101 (wit) Glad', 'article19601961'=>'HSB 103 (grijs) Glad', 'article19601994'=>'HSB 104 (groen/grijs) Glad', 'article19602588'=>'HSB 106 (zwart) Glad', 'article19301458'=>'HSB 201 (wit) Houtstructuur', 'article19301459'=>'HSB 203 (grijs) Houtstructuur', 'article19301460'=>'HSB 204 (groen/grijs) Houtstructuur', 'article19301462'=>'HSB 206 (zwart) Houtstructuur', 'article19301473'=>'HSB 301 (wit) Grof', 'article19301475'=>'HSB 303 (grijs) Grof', 'article19301477'=>'HSB 304 (groen/grijs) Grof', 'article19301478'=>'HSB 306 (zwart) Grof');
 
 
-//$arrTabItems_MatKlr['cnt']['Hplhout']=array(
-//	'4110-WH_Wenge_Nakuru' => '4110-WH Wenge Nakuru',
-//	'4118-WH_Novara_Elm' => '4118-WH Novara Elm',
-//	'4122-WH_citynight' => '4122-WH citynight',
-//	'4123-WH_Cottage_Pine' => '4123-WH Cottage Pine',
-//	'4124_WH_Wenge_Opaque' => '4124 WH Wenge Opaque',
-//	'4137-WH_Frantic' => '4137-WH Frantic',
-//	'4159_WH_Shabby_White' => '4159 WH Shabby White',
-//	'4163-WH_Lumber_Pine' => '4163-WH Lumber Pine',
-//	'4166-WH_Valley_Oak' => '4166-WH Valley Oak',
-//	'4180-WH_Blackforest_Oak' => '4180-WH Blackforest Oak',
-//	'4206-60_Block_Board_Noche' => '4206-60 Block Board Noche',
-//	'4235-WH_Mags_Oak' => '4235-WH Mags Oak',
-//	'4281_WH_Glacier_Bay_Oak' => '4281 WH Glacier Bay Oak',
-//	'4283-EM-uitlopend_Urban_Oak' => '4283-EM-uitlopend Urban Oak',
-//	'4287_FW_Winter_Pine' => '4287 FW Winter Pine',
-//	'4289-WH_Vintage_Oak' => '4289-WH Vintage Oak',
-//	'4318-60_Legno_Oak' => '4318-60 Legno Oak',
-//	'4335_WH_Mountain_Lodge' => '4335 WH Mountain Lodge',
-//	'4339-WH_Silver_Pine' => '4339-WH Silver Pine',
-//	'4344-EM_Castel_Eiche' => '4344-EM Castel Eiche',
-//	'4411-60_Buster_Block' => '4411-60 Buster Block',
-//	'4418-60_Noah_Block' => '4418-60 Noah Block',
-//	'4447_EM_Noce_Romantica' => '4447 EM Noce Romantica',
-//	'4475-WH_Vintage_Festival' => '4475-WH Vintage Festival',
-//	'F_22-007_RT_Papyrus_Nibia_Grey' => 'F 22-007 RT Papyrus Nibia Grey',
-//	'F_22-008_RT_Papyrus_Nubia_Brown' => 'F 22-008 RT Papyrus Nubia Brown',
-//	'H_1146_ST22_Bardolino_Oak_Grey' => 'H 1146 ST22 Bardolino Oak Grey',
-//	'H_178_ST15_Butcherblock_Afzellia' => 'H 178 ST15 Butcherblock Afzellia',
-//	'H_308_ST9_Dakota_Oak_Light' => 'H 308 ST9 Dakota Oak Light',
-//	'H_3362_ST15_Highlicht_Oak_Redbrown' => 'H 3362 ST15 Highlicht Oak Redbrown',
-//	'H_3704_ST15_Nussbaum_Aida_Tabak' => 'H 3704 ST15 Nussbaum Aida Tabak',
-//	'R_4262_RT_Lancelot_Oak_Light' => 'R 4262 RT Lancelot Oak Light',
-//	'R_4264_RT_Lancelot_Oak_Grey' => 'R 4264 RT Lancelot Oak Grey',
-//	'R_4896_RT_Milano_Walnut' => 'R 4896 RT Milano Walnut',
-//	'R_5320_MO_Beech_White' => 'R 5320 MO Beech White',
-//	'R_5410_MO_Cognac_Wild_Pear' => 'R 5410 MO Cognac Wild Pear'
-//);
-//
-//$arrTabItems_MatKlr['cnt']['Hplfantasie']=array(
-//	'2277-90_Beige_Spectrum' => '2277-90 Beige Spectrum',
-//	'2493-EM_Remimngton_Mine' => '2493-EM Remimngton Mine',
-//	'3207-EM_Finery' => '3207-EM Finery',
-//	'3236-KS_Eternal_Iron' => '3236-KS Eternal Iron',
-//	'3243-60_Narvic_Dock' => '3243-60 Narvic Dock',
-//	'3377-KS_Roccia_Grigia' => '3377-KS Roccia Grigia',
-//	'3394-90_Labrador_Black' => '3394-90 Labrador Black',
-//	'3405-60_Cape_noir' => '3405-60 Cape noir',
-//	'3447_EM_Cloudy_Gris' => '3447 EM Cloudy Gris',
-//	'3455-60_Riga_Granite' => '3455-60 Riga Granite',
-//	'3462-60_Teara_Black' => '3462-60 Teara Black',
-//	'3488-KS_Moon_Rock' => '3488-KS Moon Rock',
-//	'3505_XX_Raja_Black' => '3505 XX Raja Black',
-//	'3515_KS_Lanes_of_Tivoli' => '3515 KS Lanes of Tivoli',
-//	'3518-60_Salento_Stone' => '3518-60 Salento Stone',
-//	'3533_EM_Travetin_Ruby_Limescale' => '3533 EM Travetin Ruby Limescale',
-//	'3690_AHD_Basalt_Slate' => '3690 AHD Basalt Slate',
-//	'3690_AHD_Himalayan_Slate' => '3690 AHD Himalayan Slate',
-//	'4619-60_Sami' => '4619-60 Sami',
-//	'4882-60_Baja_Melange' => '4882-60 Baja Melange',
-//	'4890-60_Stardust_Melage' => '4890-60 Stardust Melage',
-//	'4915-60_Blue_Steel' => '4915-60 Blue Steel',
-//	'4920_LS_Long_Road' => '4920 LS Long Road',
-//	'4939-KS_Patina_Rock' => '4939-KS Patina Rock',
-//	'6242_CR_Mozaiek_Carmin' => '6242 CR Mozaiek Carmin',
-//	'F_274_ST15_Concrete_Light' => 'F 274 ST15 Concrete Light',
-//	'F_275_ST15_Contrete_Dark' => 'F 275 ST15 Contrete Dark',
-//	'F_7207_FG_Silver_Hancock' => 'F 7207 FG Silver Hancock',
-//	'F_7486_MP_Zeus_Anthracite' => 'F 7486 MP Zeus Anthracite',
-//	'F_7487_MP_Zeus_Silbergrau' => 'F 7487 MP Zeus Silbergrau',
-//	'F_7646_TC_Peru_Anthracite' => 'F 7646 TC Peru Anthracite',
-//	'F_7654_CS_Flash_Back' => 'F 7654 CS Flash Back',
-//	'F_7655CS_Quartz_Stone' => 'F 7655CS Quartz Stone',
-//	'F_7684_TC_Fino_Dark_Anthracite' => 'F 7684 TC Fino Dark Anthracite',
-//	'F_7919_TC_Corn_Black_White' => 'F 7919 TC Corn Black White',
-//	'F_7920_TC_Com_Light_Grey' => 'F 7920 TC Com Light Grey',
-//	'F_8340_MP_Mignight_Dream' => 'F 8340 MP Mignight Dream',
-//	'F_8345_CS_Tula_Titaan' => 'F 8345 CS Tula Titaan',
-//	'M_9510_SM_Geborsteld_Aluminium' => 'M 9510 SM Geborsteld Aluminium',
-//	'M_9610_SM_RVS_Look' => 'M 9610 SM RVS Look',
-//	'R_6053_CS_Ottawa_White' => 'R 6053 CS Ottawa White',
-//	'R_6060_FG_Belmote_Beige' => 'R 6060 FG Belmote Beige',
-//	'R_6062_FG_Belmont_Grey' => 'R 6062 FG Belmont Grey',
-//	'R_6216_TC_Negro_Brasil' => 'R 6216 TC Negro Brasil',
-//	'R_6217_TC_Brazil_light' => 'R 6217 TC Brazil light',
-//	'R_6284_TC_Belluno_Granite' => 'R 6284 TC Belluno Granite',
-//	'R_6423_CS_Limestone_Grey' => 'R 6423 CS Limestone Grey',
-//	'R_6423_TC_Limestone_Grey' => 'R 6423 TC Limestone Grey',
-//	'R_6424_CS_Limestone_Black' => 'R 6424 CS Limestone Black',
-//	'R_6424_TC_Limestone_Black' => 'R 6424 TC Limestone Black',
-//	'R_6499_TC_Roma_Marble' => 'R 6499 TC Roma Marble'
-//);
-//
-//$arrTabItems_MatKlr['cnt']['Hpluni']=array(
-//	'0901_KS_BLACK' => '0901 KS BLACK',
-//	'U_1026_TC_Christal_White' => 'U 1026 TC Christal White',
-//	'U_1027_TC_Icy_White' => 'U 1027 TC Icy White',
-//	'U_1179_TC_Manhattan_Grey' => 'U 1179 TC Manhattan Grey',
-//	'U_1191_MP_Congo' => 'U 1191 MP Congo',
-//	'U_1257_MP_Graphite' => 'U 1257 MP Graphite',
-//	'U_1290_MP_Anthracite' => 'U 1290 MP Anthracite',
-//	'U_1358_TC_Jasmine' => 'U 1358 TC Jasmine'
-//);
+$arrTabItems_MatKlr['cnt']['Hplhout']=array(
+	'4110-WH_Wenge_Nakuru' => '4110-WH Wenge Nakuru',
+	'4118-WH_Novara_Elm' => '4118-WH Novara Elm',
+	'4122-WH_citynight' => '4122-WH citynight',
+	'4123-WH_Cottage_Pine' => '4123-WH Cottage Pine',
+	'4124_WH_Wenge_Opaque' => '4124 WH Wenge Opaque',
+	'4137-WH_Frantic' => '4137-WH Frantic',
+	'4159_WH_Shabby_White' => '4159 WH Shabby White',
+	'4163-WH_Lumber_Pine' => '4163-WH Lumber Pine',
+	'4166-WH_Valley_Oak' => '4166-WH Valley Oak',
+	'4180-WH_Blackforest_Oak' => '4180-WH Blackforest Oak',
+	'4206-60_Block_Board_Noche' => '4206-60 Block Board Noche',
+	'4235-WH_Mags_Oak' => '4235-WH Mags Oak',
+	'4281_WH_Glacier_Bay_Oak' => '4281 WH Glacier Bay Oak',
+	'4283-EM-uitlopend_Urban_Oak' => '4283-EM-uitlopend Urban Oak',
+	'4287_FW_Winter_Pine' => '4287 FW Winter Pine',
+	'4289-WH_Vintage_Oak' => '4289-WH Vintage Oak',
+	'4318-60_Legno_Oak' => '4318-60 Legno Oak',
+	'4335_WH_Mountain_Lodge' => '4335 WH Mountain Lodge',
+	'4339-WH_Silver_Pine' => '4339-WH Silver Pine',
+	'4344-EM_Castel_Eiche' => '4344-EM Castel Eiche',
+	'4411-60_Buster_Block' => '4411-60 Buster Block',
+	'4418-60_Noah_Block' => '4418-60 Noah Block',
+	'4447_EM_Noce_Romantica' => '4447 EM Noce Romantica',
+	'4475-WH_Vintage_Festival' => '4475-WH Vintage Festival',
+	'F_22-007_RT_Papyrus_Nibia_Grey' => 'F 22-007 RT Papyrus Nibia Grey',
+	'F_22-008_RT_Papyrus_Nubia_Brown' => 'F 22-008 RT Papyrus Nubia Brown',
+	'H_1146_ST22_Bardolino_Oak_Grey' => 'H 1146 ST22 Bardolino Oak Grey',
+	'H_178_ST15_Butcherblock_Afzellia' => 'H 178 ST15 Butcherblock Afzellia',
+	'H_308_ST9_Dakota_Oak_Light' => 'H 308 ST9 Dakota Oak Light',
+	'H_3362_ST15_Highlicht_Oak_Redbrown' => 'H 3362 ST15 Highlicht Oak Redbrown',
+	'H_3704_ST15_Nussbaum_Aida_Tabak' => 'H 3704 ST15 Nussbaum Aida Tabak',
+	'R_4262_RT_Lancelot_Oak_Light' => 'R 4262 RT Lancelot Oak Light',
+	'R_4264_RT_Lancelot_Oak_Grey' => 'R 4264 RT Lancelot Oak Grey',
+	'R_4896_RT_Milano_Walnut' => 'R 4896 RT Milano Walnut',
+	'R_5320_MO_Beech_White' => 'R 5320 MO Beech White',
+	'R_5410_MO_Cognac_Wild_Pear' => 'R 5410 MO Cognac Wild Pear'
+);
+
+$arrTabItems_MatKlr['cnt']['Hplfantasie']=array(
+	'2277-90_Beige_Spectrum' => '2277-90 Beige Spectrum',
+	'2493-EM_Remimngton_Mine' => '2493-EM Remimngton Mine',
+	'3207-EM_Finery' => '3207-EM Finery',
+	'3236-KS_Eternal_Iron' => '3236-KS Eternal Iron',
+	'3243-60_Narvic_Dock' => '3243-60 Narvic Dock',
+	'3377-KS_Roccia_Grigia' => '3377-KS Roccia Grigia',
+	'3394-90_Labrador_Black' => '3394-90 Labrador Black',
+	'3405-60_Cape_noir' => '3405-60 Cape noir',
+	'3447_EM_Cloudy_Gris' => '3447 EM Cloudy Gris',
+	'3455-60_Riga_Granite' => '3455-60 Riga Granite',
+	'3462-60_Teara_Black' => '3462-60 Teara Black',
+	'3488-KS_Moon_Rock' => '3488-KS Moon Rock',
+	'3505_XX_Raja_Black' => '3505 XX Raja Black',
+	'3515_KS_Lanes_of_Tivoli' => '3515 KS Lanes of Tivoli',
+	'3518-60_Salento_Stone' => '3518-60 Salento Stone',
+	'3533_EM_Travetin_Ruby_Limescale' => '3533 EM Travetin Ruby Limescale',
+	'3690_AHD_Basalt_Slate' => '3690 AHD Basalt Slate',
+	'3690_AHD_Himalayan_Slate' => '3690 AHD Himalayan Slate',
+	'4619-60_Sami' => '4619-60 Sami',
+	'4882-60_Baja_Melange' => '4882-60 Baja Melange',
+	'4890-60_Stardust_Melage' => '4890-60 Stardust Melage',
+	'4915-60_Blue_Steel' => '4915-60 Blue Steel',
+	'4920_LS_Long_Road' => '4920 LS Long Road',
+	'4939-KS_Patina_Rock' => '4939-KS Patina Rock',
+	'6242_CR_Mozaiek_Carmin' => '6242 CR Mozaiek Carmin',
+	'F_274_ST15_Concrete_Light' => 'F 274 ST15 Concrete Light',
+	'F_275_ST15_Contrete_Dark' => 'F 275 ST15 Contrete Dark',
+	'F_7207_FG_Silver_Hancock' => 'F 7207 FG Silver Hancock',
+	'F_7486_MP_Zeus_Anthracite' => 'F 7486 MP Zeus Anthracite',
+	'F_7487_MP_Zeus_Silbergrau' => 'F 7487 MP Zeus Silbergrau',
+	'F_7646_TC_Peru_Anthracite' => 'F 7646 TC Peru Anthracite',
+	'F_7654_CS_Flash_Back' => 'F 7654 CS Flash Back',
+	'F_7655CS_Quartz_Stone' => 'F 7655CS Quartz Stone',
+	'F_7684_TC_Fino_Dark_Anthracite' => 'F 7684 TC Fino Dark Anthracite',
+	'F_7919_TC_Corn_Black_White' => 'F 7919 TC Corn Black White',
+	'F_7920_TC_Com_Light_Grey' => 'F 7920 TC Com Light Grey',
+	'F_8340_MP_Mignight_Dream' => 'F 8340 MP Mignight Dream',
+	'F_8345_CS_Tula_Titaan' => 'F 8345 CS Tula Titaan',
+	'M_9510_SM_Geborsteld_Aluminium' => 'M 9510 SM Geborsteld Aluminium',
+	'M_9610_SM_RVS_Look' => 'M 9610 SM RVS Look',
+	'R_6053_CS_Ottawa_White' => 'R 6053 CS Ottawa White',
+	'R_6060_FG_Belmote_Beige' => 'R 6060 FG Belmote Beige',
+	'R_6062_FG_Belmont_Grey' => 'R 6062 FG Belmont Grey',
+	'R_6216_TC_Negro_Brasil' => 'R 6216 TC Negro Brasil',
+	'R_6217_TC_Brazil_light' => 'R 6217 TC Brazil light',
+	'R_6284_TC_Belluno_Granite' => 'R 6284 TC Belluno Granite',
+	'R_6423_CS_Limestone_Grey' => 'R 6423 CS Limestone Grey',
+	'R_6423_TC_Limestone_Grey' => 'R 6423 TC Limestone Grey',
+	'R_6424_CS_Limestone_Black' => 'R 6424 CS Limestone Black',
+	'R_6424_TC_Limestone_Black' => 'R 6424 TC Limestone Black',
+	'R_6499_TC_Roma_Marble' => 'R 6499 TC Roma Marble'
+);
+
+$arrTabItems_MatKlr['cnt']['Hpluni']=array(
+	'0901_KS_BLACK' => '0901 KS BLACK',
+	'U_1026_TC_Christal_White' => 'U 1026 TC Christal White',
+	'U_1027_TC_Icy_White' => 'U 1027 TC Icy White',
+	'U_1179_TC_Manhattan_Grey' => 'U 1179 TC Manhattan Grey',
+	'U_1191_MP_Congo' => 'U 1191 MP Congo',
+	'U_1257_MP_Graphite' => 'U 1257 MP Graphite',
+	'U_1290_MP_Anthracite' => 'U 1290 MP Anthracite',
+	'U_1358_TC_Jasmine' => 'U 1358 TC Jasmine'
+);
 
 $arrTabItems_MatKlr['cnt']['Keramiek']=array(
-	'Ambrato_Dikte_6_of_12_mm' => 'Ambrato ',
-	'Barro_Dikte_6_of_12_mm' => 'Barro ',
-	'Basalt_Beige_Dikte_6_of_12_mm' => 'Basalt Beige ',
-	'Basalt_Black_Dikte_6_of_12_mm' => 'Basalt Black ',
-	'Basalt_Grey_Dikte_6_of_12_mm' => 'Basalt Grey ',
-	'Bianco_Dikte_6_of_12_mm' => 'Bianco ',
-	'Blue-Stone_Dikte_7_of_12_mm' => 'Blue-Stone ',
-	'Cement_Dikte_6_of_12_mm' => 'Cement ',
-	'Fokos_Antracite_Dikte_7_mm' => 'Fokos Antracite ',
-	'Fokos-Rena_Dikte_7_mm' => 'Fokos-Rena ',
-	'Fokos-Roccia_Dikte_7_mm' => 'Fokos-Roccia ',
-	'Fokos-Roma_Dikte_7_mm' => 'Fokos-Roma ',
-	'Fossile_Torino_Dikte_7_mm' => 'Fossile Torino ',
-	'Fuerza_Dikte_6_of_12_mm' => 'Fuerza ',
-	'Iron-Ash_Dikte_6_of_12_mm' => 'Iron-Ash ',
-	'Iron-Copper_Dikte_6_of_12_mm' => 'Iron-Copper ',
-	'Iron-Corten_Dikte_6_of_12_mm' => 'Iron-Corten ',
-	'Lava-Serena_Dikte_6_of_12_mm' => 'Lava-Serena ',
-	'Metallo-Argento_Dikte_7_mm' => 'Metallo-Argento ',
-	'Metallo-Nero_Dikte_7_mm' => 'Metallo-Nero ',
-	'Metallo-Nieve_Dikte_7_mm' => 'Metallo-Nieve ',
-	'Nero_Dikte_6_of_12_mm' => 'Nero ',
-	'Nieve_Dikte_6_of_12_mm' => 'Nieve ',
-	'Oxide-Moro_Dikte_7_mm' => 'Oxide-Moro ',
-	'Oxide-Nero_Dikte_7_mm' => 'Oxide-Nero ',
-	'Pietra_Napoli_Dikte_7_mm' => 'Pietra Napoli ',
-	'Pietra-Perla_Dikte_7_mm' => 'Pietra-Perla ',
-	'Robusto_Dikte_6_of_12_mm' => 'Robusto '
+    'Ambrato_Dikte_6_of_12_mm' => 'Ambrato ',
+    'Barro_Dikte_6_of_12_mm' => 'Barro ',
+    'Basalt_Beige_Dikte_6_of_12_mm' => 'Basalt Beige ',
+    'Basalt_Black_Dikte_6_of_12_mm' => 'Basalt Black ',
+    'Basalt_Grey_Dikte_6_of_12_mm' => 'Basalt Grey ',
+    'Bianco_Dikte_6_of_12_mm' => 'Bianco ',
+    'Blue-Stone_Dikte_7_of_12_mm' => 'Blue-Stone ',
+    'Cement_Dikte_6_of_12_mm' => 'Cement ',
+    'Fokos_Antracite_Dikte_7_mm' => 'Fokos Antracite ',
+    'Fokos-Rena_Dikte_7_mm' => 'Fokos-Rena ',
+    'Fokos-Roccia_Dikte_7_mm' => 'Fokos-Roccia ',
+    'Fokos-Roma_Dikte_7_mm' => 'Fokos-Roma ',
+    'Fossile_Torino_Dikte_7_mm' => 'Fossile Torino ',
+    'Fuerza_Dikte_6_of_12_mm' => 'Fuerza ',
+    'Iron-Ash_Dikte_6_of_12_mm' => 'Iron-Ash ',
+    'Iron-Copper_Dikte_6_of_12_mm' => 'Iron-Copper ',
+    'Iron-Corten_Dikte_6_of_12_mm' => 'Iron-Corten ',
+    'Lava-Serena_Dikte_6_of_12_mm' => 'Lava-Serena ',
+    'Metallo-Argento_Dikte_7_mm' => 'Metallo-Argento ',
+    'Metallo-Nero_Dikte_7_mm' => 'Metallo-Nero ',
+    'Metallo-Nieve_Dikte_7_mm' => 'Metallo-Nieve ',
+    'Nero_Dikte_6_of_12_mm' => 'Nero ',
+    'Nieve_Dikte_6_of_12_mm' => 'Nieve ',
+    'Oxide-Moro_Dikte_7_mm' => 'Oxide-Moro ',
+    'Oxide-Nero_Dikte_7_mm' => 'Oxide-Nero ',
+    'Pietra_Napoli_Dikte_7_mm' => 'Pietra Napoli ',
+    'Pietra-Perla_Dikte_7_mm' => 'Pietra-Perla ',
+    'Robusto_Dikte_6_of_12_mm' => 'Robusto '
 );
 
 
@@ -239,154 +239,155 @@ $arrTabItems_MatKlr['cnt']['Keramiek']=array(
 
 
 $arrTabItems_MatKlr['cnt']['BC']=array(
-	'article23922679'=>'HSBC 1011 (beige/grijs)',
-	'article19601961'=>'HSBC 1031 (grijs)',
-	'article21171933'=>'HSBC 1051 (donker grijs)',
-	'article30749898'=>'HSBC 1052 (antraciet grijs)'
+    'article23922679'=>'HSBC 1011 (beige/grijs)',
+    'article19601961'=>'HSBC 1031 (grijs)',
+    'article21171933'=>'HSBC 1051 (donker grijs)',
+    'article30749898'=>'HSBC 1052 (antraciet grijs)'
 );
 
 $arrTabItems_MatKlr['cnt']['Composiet']=array(
-	'Arden_Bleu_Dikte_12_of_20_mm' => 'Arden Bleu',
-	'Basalto_Dikte_20_mm' => 'Basalto ',
-	'Beach_Black_Dikte_12,_20_of_30_mm' => 'Beach Black ',
-	'Beach_Iceberg_Dikte_12,_20_of_30_mm' => 'Beach Iceberg ',
-	'Beach_Medium_Grey_Dikte_12,_20_of_30_mm' => 'Beach Medium Grey ',
-	'Beach_Taupe_Dikte_12_of_20_mm' => 'Beach Taupe ',
-	'Beach_White_new_Dikte_12,_20_of_30_mm' => 'Beach White new ',
-	'Belgian_Blue_Dikte_12,_20_of_30_mm' => 'Belgian Blue ',
-	'Bianco_Arabescato_Dikte_12_of_30_mm' => 'Bianco Arabescato ',
-	'Blanco_Assoluto_Dikte_12_of_20_mm' => 'Blanco Assoluto ',
-	'Buxy_Grey_Dikte_12,_20_of_30_mm' => 'Buxy Grey ',
-	'Cacao_Dikte_12_of_20_mm' => 'Cacao ',
-	'Clamshell_Dikte_12_of_20_mm' => 'Clamshell ',
-	'Cloud_Grey_Dikte_12_of_20_mm' => 'Cloud Grey ',
-	'Cobalt_Grey_Dikte_12_of_20_mm' => 'Cobalt Grey ',
-	'Concreto_Dikte_20_mm' => 'Concreto ',
-	'Crema_Botticino_Dikte_12_of_20_mm' => 'Crema Botticino ',
-	'Cuba_Brown_Dikte_12,_20_of_30_mm' => 'Cuba Brown ',
-	'Divinity_Black_New_Dikte_12,_20_of_30_mm' => 'Divinity Black New ',
-	'Divinity_White_Dikte_12,_20_of_30_mm' => 'Divinity White ',
-	'Dolphin_Grey_Dikte_12,_20_of_30_mm' => 'Dolphin Grey ',
-	'Emperadoro_Dikte_12_of_20_mm' => 'Emperadoro ',
-	'Fres-Concrete_Dikte_12_of_20_mm' => 'Fres-Concrete ',
-	'Ginger_Dikte_12,_20_of_30_mm' => 'Ginger ',
-	'Grigio_Fregato_Dikte_12_of_20_mm' => 'Grigio Fregato ',
-	'Grigio_anthracite_Dikte_12,_20_of_30_mm' => 'Grigio anthracite ',
-	'Ivory_Dikte_12_of_20_mm' => 'Ivory ',
-	'Jet_Black_Dikte_12,_20_of_30_mm' => 'Jet Black ',
-	'Legend_Black_Dikte_12_of_20_mm' => 'Legend Black ',
-	'London_Grey_Dikte_12_of_20_mm' => 'London Grey ',
-	'Mosaici_Carbone_Dikte_20_mm' => 'MosaiÌˆci Carbone ',
-	'Noka_Dikte_12_of_20_mm' => 'Noka ',
-	'Organic_White_Dikte_12,_20_of_30_mm' => 'Organic White ',
-	'Oriental_Black_Dikte_12,_20_of_30_mm' => 'Oriental Black ',
-	'Oriental_White_Dikte_12_of_20_mm' => 'OrieÌˆntal White ',
-	'Oyster_Dikte_12,_20_of_30_mm' => 'Oyster ',
-	'Piatra_Grey_Dikte_12_of_20_mm' => 'Piatra Grey ',
-	'Pure_White_Dikte_12,_20_of_30_mm' => 'Pure White ',
-	'Raven_Dikte_12,_20_of_30_mm' => 'Raven ',
-	'Raw-Concrete_Dikte_12_of_20_mm' => 'Raw-Concrete ',
-	'Rougui_Dikte_12_of_20_mm' => 'Rougui ',
-	'Salt_White_Dikte_12_of_20_mm' => 'Salt White ',
-	'Sand_Dikte_12,_20_of_30_mm' => 'Sand ',
-	'Shadow_Black_Dikte_12_of_20_mm' => 'Shadow Black ',
-	'Shitake_Dikte_12,_20_of_30_mm' => 'Shitake ',
-	'Slate_Dikte_12,_20_of_30_mm' => 'Slate ',
-	'Smoke_Grey_Dikte_12_of_20_mm' => 'Smoke Grey ',
-	'Soil_Dikte_12_of_20_mm' => 'Soil ',
-	'Stellar_Negro_Dikte_12,_20_of_30_mm' => 'Stellar Negro ',
-	'Storm_Dikte_12_of_20_mm' => 'Storm ',
-	'Vanilla_Noir_Dikte_12_of_20_mm' => 'Vanilla Noir '
+    'Arden_Bleu_Dikte_12_of_20_mm' => 'Arden Bleu',
+    'Basalto_Dikte_20_mm' => 'Basalto ',
+    'Beach_Black_Dikte_12,_20_of_30_mm' => 'Beach Black ',
+    'Beach_Iceberg_Dikte_12,_20_of_30_mm' => 'Beach Iceberg ',
+    'Beach_Medium_Grey_Dikte_12,_20_of_30_mm' => 'Beach Medium Grey ',
+    'Beach_Taupe_Dikte_12_of_20_mm' => 'Beach Taupe ',
+    'Beach_White_new_Dikte_12,_20_of_30_mm' => 'Beach White new ',
+    'Belgian_Blue_Dikte_12,_20_of_30_mm' => 'Belgian Blue ',
+    'Bianco_Arabescato_Dikte_12_of_30_mm' => 'Bianco Arabescato ',
+    'Blanco_Assoluto_Dikte_12_of_20_mm' => 'Blanco Assoluto ',
+    'Buxy_Grey_Dikte_12,_20_of_30_mm' => 'Buxy Grey ',
+    'Cacao_Dikte_12_of_20_mm' => 'Cacao ',
+    'Clamshell_Dikte_12_of_20_mm' => 'Clamshell ',
+    'Cloud_Grey_Dikte_12_of_20_mm' => 'Cloud Grey ',
+    'Cobalt_Grey_Dikte_12_of_20_mm' => 'Cobalt Grey ',
+    'Concreto_Dikte_20_mm' => 'Concreto ',
+    'Crema_Botticino_Dikte_12_of_20_mm' => 'Crema Botticino ',
+    'Cuba_Brown_Dikte_12,_20_of_30_mm' => 'Cuba Brown ',
+    'Divinity_Black_New_Dikte_12,_20_of_30_mm' => 'Divinity Black New ',
+    'Divinity_White_Dikte_12,_20_of_30_mm' => 'Divinity White ',
+    'Dolphin_Grey_Dikte_12,_20_of_30_mm' => 'Dolphin Grey ',
+    'Emperadoro_Dikte_12_of_20_mm' => 'Emperadoro ',
+    'Fres-Concrete_Dikte_12_of_20_mm' => 'Fres-Concrete ',
+    'Ginger_Dikte_12,_20_of_30_mm' => 'Ginger ',
+    'Grigio_Fregato_Dikte_12_of_20_mm' => 'Grigio Fregato ',
+    'Grigio_anthracite_Dikte_12,_20_of_30_mm' => 'Grigio anthracite ',
+    'Ivory_Dikte_12_of_20_mm' => 'Ivory ',
+    'Jet_Black_Dikte_12,_20_of_30_mm' => 'Jet Black ',
+    'Legend_Black_Dikte_12_of_20_mm' => 'Legend Black ',
+    'London_Grey_Dikte_12_of_20_mm' => 'London Grey ',
+    'Mosaici_Carbone_Dikte_20_mm' => 'MosaiÌˆci Carbone ',
+    'Noka_Dikte_12_of_20_mm' => 'Noka ',
+    'Organic_White_Dikte_12,_20_of_30_mm' => 'Organic White ',
+    'Oriental_Black_Dikte_12,_20_of_30_mm' => 'Oriental Black ',
+    'Oriental_White_Dikte_12_of_20_mm' => 'OrieÌˆntal White ',
+    'Oyster_Dikte_12,_20_of_30_mm' => 'Oyster ',
+    'Piatra_Grey_Dikte_12_of_20_mm' => 'Piatra Grey ',
+    'Pure_White_Dikte_12,_20_of_30_mm' => 'Pure White ',
+    'Raven_Dikte_12,_20_of_30_mm' => 'Raven ',
+    'Raw-Concrete_Dikte_12_of_20_mm' => 'Raw-Concrete ',
+    'Rougui_Dikte_12_of_20_mm' => 'Rougui ',
+    'Salt_White_Dikte_12_of_20_mm' => 'Salt White ',
+    'Sand_Dikte_12,_20_of_30_mm' => 'Sand ',
+    'Shadow_Black_Dikte_12_of_20_mm' => 'Shadow Black ',
+    'Shitake_Dikte_12,_20_of_30_mm' => 'Shitake ',
+    'Slate_Dikte_12,_20_of_30_mm' => 'Slate ',
+    'Smoke_Grey_Dikte_12_of_20_mm' => 'Smoke Grey ',
+    'Soil_Dikte_12_of_20_mm' => 'Soil ',
+    'Stellar_Negro_Dikte_12,_20_of_30_mm' => 'Stellar Negro ',
+    'Storm_Dikte_12_of_20_mm' => 'Storm ',
+    'Vanilla_Noir_Dikte_12_of_20_mm' => 'Vanilla Noir '
 );
 
 $arrTabItems_MatKlr['cnt']['Graniet']=array(
-	'Antacitardo_Dikte_20_of_30_mm' => 'Antacitardo ',
-	'Bahia_Black_Dikte_20_of_30_mm' => 'Bahia Black ',
-	'Blanco_Tierra_Dikte_20_of_30_mm' => 'Blanco Tierra ',
-	'Gato_Dikte_20_of_30_mm' => 'Gato ',
-	'Hardsteen_Belgisch_Dikte_20_of_30_mm' => 'Hardsteen Belgisch ',
-	'Hardsteen_Toscaans_Dikte_20_of_30_mm' => 'Hardsteen Toscaans ',
-	'Impala_Becker_Dikte_20_of_30_mm' => 'Impala Becker ',
-	'Impala_Indian_Dikte_20' => 'Impala Indian',
-	'Indian_Brown_Dikte_20_of_30_mm' => 'Indian Brown ',
-	'Labrador_Vert_Dikte_20_of_30_mm' => 'Labrador Vert ',
-	'Nero_Assoluto_Dikte_20_of_30_mm' => 'Nero Assoluto ',
-	'Nero_Profondo_Dikte_20_of_30_mm' => 'Nero Profondo ',
-	'Rosa_Beta_Dikte_20_of_30_mm' => 'Rosa Beta ',
-	'Star_Galaxy_Dikte_20_of_30_mm' => 'Star Galaxy ',
-	'Steel_Grey_Dikte_20_of_30_mm' => 'Steel Grey ',
-	'Velvet_Brown_Dikte_20_of_30_mm' => 'Velvet Brown '
+    'Antacitardo_Dikte_20_of_30_mm' => 'Antacitardo ',
+    'Bahia_Black_Dikte_20_of_30_mm' => 'Bahia Black ',
+    'Blanco_Tierra_Dikte_20_of_30_mm' => 'Blanco Tierra ',
+    'Gato_Dikte_20_of_30_mm' => 'Gato ',
+    'Hardsteen_Belgisch_Dikte_20_of_30_mm' => 'Hardsteen Belgisch ',
+    'Hardsteen_Toscaans_Dikte_20_of_30_mm' => 'Hardsteen Toscaans ',
+    'Impala_Becker_Dikte_20_of_30_mm' => 'Impala Becker ',
+    'Impala_Indian_Dikte_20' => 'Impala Indian ',
+    'Indian_Brown_Dikte_20_of_30_mm' => 'Indian Brown ',
+    'Labrador_Vert_Dikte_20_of_30_mm' => 'Labrador Vert ',
+    'Nero_Assoluto_Dikte_20_of_30_mm' => 'Nero Assoluto ',
+    'Nero_Profondo_Dikte_20_of_30_mm' => 'Nero Profondo ',
+    'Rosa_Beta_Dikte_20_of_30_mm' => 'Rosa Beta ',
+    'Star_Galaxy_Dikte_20_of_30_mm' => 'Star Galaxy ',
+    'Steel_Grey_Dikte_20_of_30_mm' => 'Steel Grey ',
+    'Velvet_Brown_Dikte_20_of_30_mm' => 'Velvet Brown '
 );
 
 //$arrTabItems_MatKlr['cnt']['BL']=array('article23850354'=>'HSBL 4031', 'article23850374'=>'HSBL 4041', 'article23850384'=>'HSBL 4051');
-$arrTabItems_MatKlr['cnt']['L']=array(
-	'article19906306'=>'HSL 6217TC',
-	'article19906317'=>'HSL 6282TC',
-	'article19906564'=>'HSL 7654CS',
-	'article19906573'=>'HSL 7654MP',
-	'article19899398'=>'HSL 1027TC',
-	'article19899389'=>'HSL 1027CS',
-	'article19899405'=>'HSL 1179TC',
-	'article19906326'=>'HSL 6284TC',
-	'article19899408'=>'HSL 1200CS',
-	'article19906584'=>'HSL 7684TC',
-	'article19899358'=>'HSL 1026CS',
-	'article19899382'=>'HSL 1026TC',
-	'article19906589'=>'HSL 7919TC',
-	'article19899426'=>'HSL 1257TC',
-	'article19899430'=>'HSL 1290 MP',
-	'article19906344'=>'HSL 6352TC',
-	'article19899434'=>'HSL 1358TC',
-	'article19899435'=>'HSL 2277Q',
-	'article19906603'=>'HSL 7920TC',
-	'article19906355'=>'HSL 6401TC',
-	'article19906611'=>'HSL 8194MP',
-	'article19906617'=>'HSL 8340MP',
-	'article19899452'=>'HSL 3394Q',
-	'article19906366'=>'HSL 6423CS',
-	'article19899455'=>'HSL 3405-60',
-	'article19906625'=>'HSL 8341MP',
-	'article19906633'=>'HSL 8342CS',
-	'article19906640'=>'HSL 8342MO',
-	'article19906391'=>'HSL 6423TC',
-	'article19899481'=>'HSL 3455-60',
-	'article19906654'=>'HSL 9510SM',
-	'article19906404'=>'HSL 6424CS',
-	'article19899494'=>'HSL 3462-60',
-	'article19906666'=>'HSL 9610SM',
-	'article19899501'=>'HSL 4087NP',
-	'article19906420'=>'HSL 6424TC',
-	'article19906679'=>'HSL F22-007ST22',
-	'article19901306'=>'HSL 4882-90',
-	'article19906691'=>'HSL F22-008ST22',
-	'article19901316'=>'HSL 4890-90',
-	'article19906700'=>'HSL F275ST15',
-	'article19901331'=>'HSL 4896RU',
-	'article19906453'=>'HSL 6456VV',
-	'article19901086'=>'HSL 4206-60',
-	'article19901348'=>'HSL 5152VV',
-	'article19901096'=>'HSL 4272VV',
-	'article19901357'=>'HSL 5320TR',
-	'article19901102'=>'HSL 4314-60',
-	'article19906484'=>'HSL 6533Q',
-	'article19906740'=>'HSL H3306ST15',
-	'article19901110'=>'HSL 4318-60',
-	'article19906750'=>'HSL H3704ST15',
-	'article19901381'=>'HSL 5410TR',
-	'article19901128'=>'HSL 4393-60',
-	'article19901389'=>'HSL 5447TR',
-	'article19906515'=>'HSL 7486MP',
-	'article19901149'=>'HSL 4447EM',
-	'article19906525'=>'HSL 7487MP',
-	'article19901413'=>'HSL 5681TR',
-	'article19906283'=>'HSL 6216TC',
-	'article19906540'=>'HSL 7515TC',
-	'article19901166'=>'HSL 4601TR',
-	'article19901423'=>'HSL 5687TR',
-	'article19906291'=>'HSL 6217CS',
-	'article19901174'=>'HSL 4619-60',
-	'article19906551'=>'HSL 7646TC'
-);
+
+//$arrTabItems_MatKlr['cnt']['L']=array(
+//    'article19906306'=>'HSL 6217TC',
+//    'article19906317'=>'HSL 6282TC',
+//    'article19906564'=>'HSL 7654CS',
+//    'article19906573'=>'HSL 7654MP',
+//    'article19899398'=>'HSL 1027TC',
+//    'article19899389'=>'HSL 1027CS',
+//    'article19899405'=>'HSL 1179TC',
+//    'article19906326'=>'HSL 6284TC',
+//    'article19899408'=>'HSL 1200CS',
+//    'article19906584'=>'HSL 7684TC',
+//    'article19899358'=>'HSL 1026CS',
+//    'article19899382'=>'HSL 1026TC',
+//    'article19906589'=>'HSL 7919TC',
+//    'article19899426'=>'HSL 1257TC',
+//    'article19899430'=>'HSL 1290 MP',
+//    'article19906344'=>'HSL 6352TC',
+//    'article19899434'=>'HSL 1358TC',
+//    'article19899435'=>'HSL 2277Q',
+//    'article19906603'=>'HSL 7920TC',
+//    'article19906355'=>'HSL 6401TC',
+//    'article19906611'=>'HSL 8194MP',
+//    'article19906617'=>'HSL 8340MP',
+//    'article19899452'=>'HSL 3394Q',
+//    'article19906366'=>'HSL 6423CS',
+//    'article19899455'=>'HSL 3405-60',
+//    'article19906625'=>'HSL 8341MP',
+//    'article19906633'=>'HSL 8342CS',
+//    'article19906640'=>'HSL 8342MO',
+//    'article19906391'=>'HSL 6423TC',
+//    'article19899481'=>'HSL 3455-60',
+//    'article19906654'=>'HSL 9510SM',
+//    'article19906404'=>'HSL 6424CS',
+//    'article19899494'=>'HSL 3462-60',
+//    'article19906666'=>'HSL 9610SM',
+//    'article19899501'=>'HSL 4087NP',
+//    'article19906420'=>'HSL 6424TC',
+//    'article19906679'=>'HSL F22-007ST22',
+//    'article19901306'=>'HSL 4882-90',
+//    'article19906691'=>'HSL F22-008ST22',
+//    'article19901316'=>'HSL 4890-90',
+//    'article19906700'=>'HSL F275ST15',
+//    'article19901331'=>'HSL 4896RU',
+//    'article19906453'=>'HSL 6456VV',
+//    'article19901086'=>'HSL 4206-60',
+//    'article19901348'=>'HSL 5152VV',
+//    'article19901096'=>'HSL 4272VV',
+//    'article19901357'=>'HSL 5320TR',
+//    'article19901102'=>'HSL 4314-60',
+//    'article19906484'=>'HSL 6533Q',
+//    'article19906740'=>'HSL H3306ST15',
+//    'article19901110'=>'HSL 4318-60',
+//    'article19906750'=>'HSL H3704ST15',
+//    'article19901381'=>'HSL 5410TR',
+//    'article19901128'=>'HSL 4393-60',
+//    'article19901389'=>'HSL 5447TR',
+//    'article19906515'=>'HSL 7486MP',
+//    'article19901149'=>'HSL 4447EM',
+//    'article19906525'=>'HSL 7487MP',
+//    'article19901413'=>'HSL 5681TR',
+//    'article19906283'=>'HSL 6216TC',
+//    'article19906540'=>'HSL 7515TC',
+//    'article19901166'=>'HSL 4601TR',
+//    'article19901423'=>'HSL 5687TR',
+//    'article19906291'=>'HSL 6217CS',
+//    'article19901174'=>'HSL 4619-60',
+//    'article19906551'=>'HSL 7646TC'
+//);
 
 //$arrTabItems_MatKlr['cnt']['T']=array('article19105244'=>'HST 2012', 'article19105258'=>'HST 2015', 'article19105265'=>'HST 2016', 'article19602334'=>'HST 2018', 'article19301514'=>'HST 2020', 'article19301544'=>'HST 2134'); //'article19301516'=>'HST 2032', 'article19301518'=>'HST 2040', 'article19301520'=>'HST 2081', 'article19301522'=>'HST 2092', 'article19301524'=>'HST 2108', 'article19301531'=>'HST 2113', 'article19301538'=>'HST 2129', 'article19397551'=>'HST 2130'
 //- define the css style and its DOM id reference, used in tab buttons and tab content container and in scripting
@@ -425,22 +426,22 @@ $arrTabItems_Spoelbak['dir']['RVS_LORREINE']=$GLOBALS["own"]["baseurl"].'images/
 //$arrTabItems_Spoelbak['cnt']['RVS_BARONGA']=array('article19534875'=>array('desc'=>'Baronga 34', 'price'=>209.00), 'article19534976'=>array('desc'=>'Baronga 3415/1534', 'price'=>299.00), 'article19535135'=>array('desc'=>'Baronga 40', 'price'=>149.00), 'article19535247'=>array('desc'=>'Baronga 46', 'price'=>329.00), 'article19535292'=>array('desc'=>'Baronga 55', 'price'=>189.00), 'article19535338'=>array('desc'=>'Baronga 80', 'price'=>319.00));
 //$arrTabItems_Spoelbak['cnt']['RVS_FRANKE']=array('article19465465'=>array('desc'=>'Franke Gallassio GAX 110.450', 'price'=>189.00), 'article19465681'=>array('desc'=>'Franke Kubux KBX 110.34-T/210.34-T', 'price'=>239.00), 'article19465807'=>array('desc'=>'Franke Kubux KBX 110.45-T/210.45-T', 'price'=>244.00), 'article19465903'=>array('desc'=>'Franke Kubux KBX 110.55-T/210.55-T', 'price'=>269.00), 'article19434579'=>array('desc'=>'Franke Bellissimo BEX 210.50', 'price'=>179.00), 'article19466166'=>array('desc'=>'Franke Bellissimo BEX 260', 'price'=>299.00), 'article19466293'=>array('desc'=>'Franke CPX P 260', 'price'=>315.00), 'article19466057'=>array('desc'=>'Franke Quadrant QTX 210', 'price'=>79.00, 'nonDiscountPrice'=>99.00));
 $arrTabItems_Spoelbak['cnt']['RVS_LORREINE']=array(
-	'article21412761'=>array('desc'=>'Lorreine 40R', 'price'=>229.00, 'nonDiscountPrice'=>358.00),
-	'article21412846'=>array('desc'=>'Lorreine 50R', 'price'=>259.00, 'nonDiscountPrice'=>379.00),
-	'article21412685'=>array('desc'=>'Lorreine 34R', 'price'=>315.00, 'nonDiscountPrice'=>440.00),
-	'article21412927'=>array('desc'=>'Lorreine 74R', 'price'=>329.00, 'nonDiscountPrice'=>553.00),
-	'article21413116'=>array('desc'=>'Lorreine 1534R', 'price'=>409.00, 'nonDiscountPrice'=>637.00),
-	'article21413272'=>array('desc'=>'Lorreine 3434R', 'price'=>479.00, 'nonDiscountPrice'=>789.00),
-	'article21412452'=>array('desc'=>'Lorreine 17R', 'price'=>274.00, 'nonDiscountPrice'=>408.00),
-	'article21412813'=>array('desc'=>'Lorreine 40V', 'price'=>309.00, 'nonDiscountPrice'=>472.00),
-	'article21412884'=>array('desc'=>'Lorreine 50V', 'price'=>319.00, 'nonDiscountPrice'=>509.00),
-	'article21412716'=>array('desc'=>'Lorreine 34V', 'price'=>329.00, 'nonDiscountPrice'=>517.00),
-	'article21413050'=>array('desc'=>'Lorreine 74V', 'price'=>349.00, 'nonDiscountPrice'=>628.00),
-	'article21413227'=>array('desc'=>'Lorreine 1534V', 'price'=>479.00, 'nonDiscountPrice'=>739.00),
-	'article21413298'=>array('desc'=>'Lorreine 3434V', 'price'=>569.00, 'nonDiscountPrice'=>869.00),
-	'article21412648'=>array('desc'=>'Lorreine 17V', 'price'=>345.00, 'nonDiscountPrice'=>545.00),
-	'article33304489'=>array('desc'=>'RVS Tegelspoelbak 40 cm', 'price'=>525.00, 'nonDiscountPrice'=>683.00),
-	'article33304550'=>array('desc'=>'RVS Tegelspoelbak 50 cm', 'price'=>540.00, 'nonDiscountPrice'=>699.00),
+    'article21412761'=>array('desc'=>'Lorreine 40R', 'price'=>229.00, 'nonDiscountPrice'=>358.00),
+    'article21412846'=>array('desc'=>'Lorreine 50R', 'price'=>259.00, 'nonDiscountPrice'=>379.00),
+    'article21412685'=>array('desc'=>'Lorreine 34R', 'price'=>315.00, 'nonDiscountPrice'=>440.00),
+    'article21412927'=>array('desc'=>'Lorreine 74R', 'price'=>329.00, 'nonDiscountPrice'=>553.00),
+    'article21413116'=>array('desc'=>'Lorreine 1534R', 'price'=>409.00, 'nonDiscountPrice'=>637.00),
+    'article21413272'=>array('desc'=>'Lorreine 3434R', 'price'=>479.00, 'nonDiscountPrice'=>789.00),
+    'article21412452'=>array('desc'=>'Lorreine 17R', 'price'=>274.00, 'nonDiscountPrice'=>408.00),
+    'article21412813'=>array('desc'=>'Lorreine 40V', 'price'=>309.00, 'nonDiscountPrice'=>472.00),
+    'article21412884'=>array('desc'=>'Lorreine 50V', 'price'=>319.00, 'nonDiscountPrice'=>509.00),
+    'article21412716'=>array('desc'=>'Lorreine 34V', 'price'=>329.00, 'nonDiscountPrice'=>517.00),
+    'article21413050'=>array('desc'=>'Lorreine 74V', 'price'=>349.00, 'nonDiscountPrice'=>628.00),
+    'article21413227'=>array('desc'=>'Lorreine 1534V', 'price'=>479.00, 'nonDiscountPrice'=>739.00),
+    'article21413298'=>array('desc'=>'Lorreine 3434V', 'price'=>569.00, 'nonDiscountPrice'=>869.00),
+    'article21412648'=>array('desc'=>'Lorreine 17V', 'price'=>345.00, 'nonDiscountPrice'=>545.00),
+    'article33304489'=>array('desc'=>'RVS Tegelspoelbak 40 cm', 'price'=>525.00, 'nonDiscountPrice'=>683.00),
+    'article33304550'=>array('desc'=>'RVS Tegelspoelbak 50 cm', 'price'=>540.00, 'nonDiscountPrice'=>699.00),
 //    'article30270053'=>array('desc'=>'Lorreine RVS Inzetbak', 'price'=>99.00, 'nonDiscountPrice'=>149.00),
 );
 //- define the css style and its DOM id reference, used in tab buttons and tab content container and in scripting
@@ -582,33 +583,60 @@ $arrTabItems_Kraan['css_id']['tabCntContainer']='tabCnt_Kraan';
 					//		=email, output email layout
 					function fnc_FldDef($mode, $arrTabItems, &$PgFldVal, $page, $fld, &$result, &$msg, &$ContentPg) {
 
-						$materials = array(
-							"L" => array(
-								"haaks" => array(
-									"title" => "Haaks",
-									"img" => "images/haaks.jpg",
-									"dimension" => "mm",
-									"thickness" => array("25", "32", "38"),
-									"thicken" => array("36", "50", "60", "76"),
-									"extra" => array(
-										"abs" => array(
-											"title" => "Rand afwerken met ABSband",
-											"description" => "ABSband is een band van hardmateriaal in de zelfde kleur van het blad. De voorzijde wordt hierdoor veel beter bestand tegen stoten"
-										)
-									)
-								),
-								"waterkering" => array(
-									"title" => "Waterkering",
-									"dimension" => "mm",
-									"img" => "images/waterkering.jpg",
-									"thickness" => array("32", "38")
-								),
-								"afgerond" => array(
-									"title" => "Afgerond",
-									"dimension" => "mm",
-									"img" => "images/afgerond.jpg",
-									"thickness" => array("32", "38")
-								)
+                        $materials = array(
+//                            "L" => array(
+//                                "haaks" => array(
+//                                    "title" => "Haaks",
+//                                    "img" => "images/haaks.jpg",
+//                                    "dimension" => "mm",
+//                                    "thickness" => array("25", "32", "38"),
+//                                    "thicken" => array("36", "50", "60", "76"),
+//                                    "extra" => array(
+//                                        "abs" => array(
+//                                            "title" => "Rand afwerken met ABSband",
+//                                            "description" => "ABSband is een band van hardmateriaal in de zelfde kleur van het blad. De voorzijde wordt hierdoor veel beter bestand tegen stoten"
+//                                        )
+//                                    )
+//                                ),
+//                                "waterkering" => array(
+//                                    "title" => "Waterkering",
+//                                    "dimension" => "mm",
+//                                    "img" => "images/waterkering.jpg",
+//                                    "thickness" => array("32", "38")
+//                                ),
+//                                "afgerond" => array(
+//                                    "title" => "Afgerond",
+//                                    "dimension" => "mm",
+//                                    "img" => "images/afgerond.jpg",
+//                                    "thickness" => array("32", "38")
+//                                )
+//                            ),
+							"Hplhout" => array(
+                                "haaks" => array(
+                                    "title" => "Haaks",
+                                    "img" => "images/haaks.jpg",
+                                    "dimension" => "mm",
+                                    "thickness" => array("25", "32", "38"),
+                                    "thicken" => array("36", "50", "60", "76"),
+                                    "extra" => array(
+                                        "abs" => array(
+                                            "title" => "Rand afwerken met ABSband",
+                                            "description" => "ABSband is een band van hardmateriaal in de zelfde kleur van het blad. De voorzijde wordt hierdoor veel beter bestand tegen stoten"
+                                        )
+                                    )
+                                ),
+                                "waterkering" => array(
+                                    "title" => "Waterkering",
+                                    "dimension" => "mm",
+                                    "img" => "images/waterkering.jpg",
+                                    "thickness" => array("32", "38")
+                                ),
+                                "afgerond" => array(
+                                    "title" => "Afgerond",
+                                    "dimension" => "mm",
+                                    "img" => "images/afgerond.jpg",
+                                    "thickness" => array("32", "38")
+                                )
 							),
 //							"Hplhout" => array(
 //								"haaks" => array(
@@ -2010,7 +2038,7 @@ $arrTabItems_Kraan['css_id']['tabCntContainer']='tabCnt_Kraan';
 								$pg=3;
 								$type = $PgFldVal[$pg]["off_type"];
 
-								if($type == 'haaks' && $val_materiaal == "L")
+								if($type == 'haaks' && ($val_materiaal=="Hplhout" || $val_materiaal == "Hpluni" || $val_materiaal == "Hplfantasie"))
 								{
 									$val=$PgFldVal[$page][$fld];
 									if ($mode=="init" || $mode=="ctrl") {
@@ -2373,7 +2401,7 @@ $arrTabItems_Kraan['css_id']['tabCntContainer']='tabCnt_Kraan';
 									$whitelist="VP";
 									if ($mode=="ctrl") fnc_ChkFldInput($val, $whitelist, 0, 1, "De kookplaat uitsparing", $msg[$fld]);
 									if ($msg[$fld]>"") {$msg[$fld]='<br />'.$msg[$fld]; $result=FALSE;}
-									if ($mode=="ctrl" && $val_materiaal=="L" && $val=="V") { //rule: on Laminate only build-up on top possible
+									if ($mode=="ctrl" && ($val_materiaal=="Hplhout" || $val_materiaal == "Hpluni" || $val_materiaal == "Hplfantasie") && $val=="V") { //rule: on Laminate only build-up on top possible
 										if ($msg[$fld]=="") $msg[$fld]='<br />';
 										$msg[$fld].='<font color="#FF0000">Bij een werkblad van laminaat is alleen opbouw van een kookplaat mogelijk.</font><br />';
 										$val="P";
@@ -2420,7 +2448,7 @@ $arrTabItems_Kraan['css_id']['tabCntContainer']='tabCnt_Kraan';
 									$ContentPg[$page].='<tr height="10px"><td colspan="2"></td></tr>'.PHP_EOL;
 									$ContentPg[$page].='<tr><td style="text-align:left;vertical-align:middle;"><input type="radio" name="'.$fld.'" value="P" '.($val=="P"?'checked="checked" ':NULL).'class="radio" />&nbsp;Opbouw<div class="HelpIcon" title="Klein randje van kookplaat ligt op het blad."></div></td><td><img src="'.$GLOBALS["own"]["baseurl"].'images/kookplaat_opbouw.jpg" title="opbouw" style="width:80px;height:40px;" /></td></tr>'.PHP_EOL;
 
-									if ($val_materiaal!="L") {
+									if ($val_materiaal!="Hplhout" || $val_materiaal != "Hpluni" || $val_materiaal != "Hplfantasie") {
 										$ContentPg[$page].='<tr height="10px"><td colspan="2"></td></tr>'.PHP_EOL;
 										$ContentPg[$page].='<tr><td style="text-align:left;vertical-align:middle;"><input type="radio" name="'.$fld.'" value="V" '.($val=="V"?'checked="checked" ':NULL).'class="radio" />&nbsp;Vlakinbouw<div class="HelpIcon" title="Kookplaat ligt geintegreerd/verzonken in het blad."></div></td><td><img src="'.$GLOBALS["own"]["baseurl"].'images/kookplaat_vlakinbouw.jpg" title="vlakinbouw" style="width:80px;height:40px;" /></td></tr>'.PHP_EOL;
 									}
@@ -2449,12 +2477,12 @@ $arrTabItems_Kraan['css_id']['tabCntContainer']='tabCnt_Kraan';
 										$whitelist="VPN";
 										if ($mode=="ctrl") fnc_ChkFldInput($val, $whitelist, 0, 1, "De spoelbak uitsparing", $msg[$fld]);
 										if ($msg[$fld]>"") {$msg[$fld]='<br />'.$msg[$fld]; $result=FALSE;}
-										if ($mode=="ctrl" && $val_materiaal=="L" && $val=="V" && $val_spoelbaktype=="") { //rule: on Laminate and build-in at equal hight is possible together with a choosen washing basin
+										if ($mode=="ctrl" && ($val_materiaal=="Hplhout" || $val_materiaal == "Hpluni" || $val_materiaal == "Hplfantasie") && $val=="V" && $val_spoelbaktype=="") { //rule: on Laminate and build-in at equal hight is possible together with a choosen washing basin
 											if ($msg[$fld]=="") $msg[$fld]='<br />';
 											$msg[$fld].='<font color="#FF0000">Bij een werkblad van laminaat is vlakinbouw alleen mogelijk indien samen met een spoelbak.</font><br />';
 											$result=FALSE;
 										}
-										if ($mode=="ctrl" && $val_materiaal=="L" && $val=="N") { //rule: on Laminate then build-underneath is not possible
+										if ($mode=="ctrl" && ($val_materiaal=="Hplhout" || $val_materiaal == "Hpluni" || $val_materiaal == "Hplfantasie") && $val=="N") { //rule: on Laminate then build-underneath is not possible
 											if ($msg[$fld]=="") $msg[$fld]='<br />';
 											$msg[$fld].='<font color="#FF0000">Bij een werkblad van laminaat is onderbouw van een spoelbak niet mogelijk.</font><br />';
 											$val="P";
@@ -2505,7 +2533,7 @@ $arrTabItems_Kraan['css_id']['tabCntContainer']='tabCnt_Kraan';
 										$ContentPg[$page].='<table border="0" cellpadding="0" cellspacing="0">'.PHP_EOL;
 										$ContentPg[$page].='<tr><td style="text-align:left;vertical-align:middle;width:180px"><input type="radio" name="'.$fld.'" value="" '.($val==""?'checked="checked" ':NULL).'onclick="Sink_hole(this, \''.$arrTabItems['css_id']['tabCntContainer'].'\');" '.'class="radio" />&nbsp;n.v.t.</td><td></td></tr>'.PHP_EOL;
 										$ContentPg[$page].='<tr height="10px"><td colspan="2"></td></tr>'.PHP_EOL;
-										if ($val_materiaal!="L") {
+										if ($val_materiaal!="Hplhout" || $val_materiaal != "Hpluni" || $val_materiaal != "Hplfantasie") {
 											$ContentPg[$page].='<tr height="10px"><td colspan="2"></td></tr>'.PHP_EOL;
 											$ContentPg[$page].='<tr class="light-up-hover"><td style="text-align:left;vertical-align:middle;"><input type="radio" name="'.$fld.'" value="N" '.($val=="N"?'checked="checked" ':NULL).'onclick="Sink_hole(this, \''.$arrTabItems['css_id']['tabCntContainer'].'\');" class="radio" />&nbsp;Onderbouw<div class="HelpIcon" title="De spoelbak wordt aan de onderzijde van het werkblad gemonteerd"></div></td><td><img src="'.$GLOBALS["own"]["baseurl"].'images/stap6/onderbouw-spoelbak.jpg" title="onderbouw" style="width:160px;border: 1px solid rgba(0, 0, 0, 0.0);" /></td></tr>'.PHP_EOL;
 										}
@@ -2841,7 +2869,9 @@ $arrTabItems_Kraan['css_id']['tabCntContainer']='tabCnt_Kraan';
 										//	if ($val=="") $val="N";
 										//	if ($val!="J" && $val!="N") $val="N";
 										//	break;
-										case "L":
+										case "Hplhout":
+										case "Hpluni":
+										case "Hplfantasie":
 											$val="";
 											break;
 										default: //unknown/illegal value
@@ -3353,7 +3383,7 @@ $arrTabItems_Kraan['css_id']['tabCntContainer']='tabCnt_Kraan';
 											$ContentPg[$page].='<img src="'.$GLOBALS["own"]["baseurl"].'images/ok.png" id="tabCntNone_'.$arrTabItems_MatKlr['css_id']['tabCntContainer'].'_'.$btnId.'" class="'.($btnId==$val_materiaal?'tabCntNoneActive':'tabCntNoneInactive').'" title="OK" />'.PHP_EOL;
 											$ContentPg[$page].='</div>'.PHP_EOL;  //end tabCntNone
 										} else {
-											if ($btnId=="L") { //extra text for laminaat
+											if ($btnId=="Hplhout" || $btnId == "Hpluni" || $btnId == "Hplfantasie") { //extra text for laminaat
 												$ContentPg[$page].='<span><h3>'.$btnTxt.' is in vele kleuren leverbaar.</h3></span>'.PHP_EOL;
 											}
 											foreach($arrTabItems_MatKlr['cnt'][$btnId] as $cntId=>$cntTxt) {
