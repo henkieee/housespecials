@@ -1,3 +1,58 @@
+/* HEADER */
+.header-space {
+	width: 100% !important;
+	height: 230px;
+}
+
+.header-right {
+	float: right;
+}
+
+.header-right img {
+	padding-top: 10px;
+}
+
+.header-left {
+	width: 40%;
+	float: left;
+}
+
+.header-left h2 {
+	padding: 5px 25px 0 25px;
+	font-size: 30px;
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+.upper-nav {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+.upper-nav li {
+	display: inline;
+}
+
+.upper-nav li:first-child {
+	margin-right: 5px;
+}
+
+.upper-nav li a {
+	color: #0B1B6E;
+	text-transform: uppercase;
+	text-decoration: none;
+	width: 50px;
+	height: 30px;
+	border: 1px solid #0B1B6E;
+	padding: 3px;
+}
+
+.upper-nav li a:hover {
+	background-color: #0B1B6E;
+	color: #fff;
+}
+
 .checkbox, .radio {padding:0px 5px 0px 0px;margin:none;border:none;}
 
 .attention {
