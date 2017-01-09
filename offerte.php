@@ -319,73 +319,107 @@ $arrTabItems_MatKlr['cnt']['Graniet']=array(
 );
 
 //$arrTabItems_MatKlr['cnt']['BL']=array('article23850354'=>'HSBL 4031', 'article23850374'=>'HSBL 4041', 'article23850384'=>'HSBL 4051');
+
 $arrTabItems_MatKlr['cnt']['L']=array(
-	'article19906306'=>'HSL 6217TC',
-	'article19906317'=>'HSL 6282TC',
-	'article19906564'=>'HSL 7654CS',
-	'article19906573'=>'HSL 7654MP',
-	'article19899398'=>'HSL 1027TC',
-	'article19899389'=>'HSL 1027CS',
-	'article19899405'=>'HSL 1179TC',
-	'article19906326'=>'HSL 6284TC',
-	'article19899408'=>'HSL 1200CS',
-	'article19906584'=>'HSL 7684TC',
-	'article19899358'=>'HSL 1026CS',
-	'article19899382'=>'HSL 1026TC',
-	'article19906589'=>'HSL 7919TC',
-	'article19899426'=>'HSL 1257TC',
-	'article19899430'=>'HSL 1290 MP',
-	'article19906344'=>'HSL 6352TC',
-	'article19899434'=>'HSL 1358TC',
-	'article19899435'=>'HSL 2277Q',
-	'article19906603'=>'HSL 7920TC',
-	'article19906355'=>'HSL 6401TC',
-	'article19906611'=>'HSL 8194MP',
-	'article19906617'=>'HSL 8340MP',
-	'article19899452'=>'HSL 3394Q',
-	'article19906366'=>'HSL 6423CS',
-	'article19899455'=>'HSL 3405-60',
-	'article19906625'=>'HSL 8341MP',
-	'article19906633'=>'HSL 8342CS',
-	'article19906640'=>'HSL 8342MO',
-	'article19906391'=>'HSL 6423TC',
-	'article19899481'=>'HSL 3455-60',
-	'article19906654'=>'HSL 9510SM',
-	'article19906404'=>'HSL 6424CS',
-	'article19899494'=>'HSL 3462-60',
-	'article19906666'=>'HSL 9610SM',
-	'article19899501'=>'HSL 4087NP',
-	'article19906420'=>'HSL 6424TC',
-	'article19906679'=>'HSL F22-007ST22',
-	'article19901306'=>'HSL 4882-90',
-	'article19906691'=>'HSL F22-008ST22',
-	'article19901316'=>'HSL 4890-90',
-	'article19906700'=>'HSL F275ST15',
-	'article19901331'=>'HSL 4896RU',
-	'article19906453'=>'HSL 6456VV',
-	'article19901086'=>'HSL 4206-60',
-	'article19901348'=>'HSL 5152VV',
-	'article19901096'=>'HSL 4272VV',
-	'article19901357'=>'HSL 5320TR',
-	'article19901102'=>'HSL 4314-60',
-	'article19906484'=>'HSL 6533Q',
-	'article19906740'=>'HSL H3306ST15',
-	'article19901110'=>'HSL 4318-60',
-	'article19906750'=>'HSL H3704ST15',
-	'article19901381'=>'HSL 5410TR',
-	'article19901128'=>'HSL 4393-60',
-	'article19901389'=>'HSL 5447TR',
-	'article19906515'=>'HSL 7486MP',
-	'article19901149'=>'HSL 4447EM',
-	'article19906525'=>'HSL 7487MP',
-	'article19901413'=>'HSL 5681TR',
-	'article19906283'=>'HSL 6216TC',
-	'article19906540'=>'HSL 7515TC',
-	'article19901166'=>'HSL 4601TR',
-	'article19901423'=>'HSL 5687TR',
-	'article19906291'=>'HSL 6217CS',
-	'article19901174'=>'HSL 4619-60',
-	'article19906551'=>'HSL 7646TC'
+	'0901_KS_BLACK' => '0901 KS BLACK',
+	'U_1026_TC_Christal_White' => 'U 1026 TC Christal White',
+	'U_1027_TC_Icy_White' => 'U 1027 TC Icy White',
+	'U_1179_TC_Manhattan_Grey' => 'U 1179 TC Manhattan Grey',
+	'U_1191_MP_Congo' => 'U 1191 MP Congo',
+	'U_1257_MP_Graphite' => 'U 1257 MP Graphite',
+	'U_1290_MP_Anthracite' => 'U 1290 MP Anthracite',
+	'U_1358_TC_Jasmine' => 'U 1358 TC Jasmine',
+
+
+	'2277-90_Beige_Spectrum' => '2277-90 Beige Spectrum',
+	'2493-EM_Remimngton_Mine' => '2493-EM Remimngton Mine',
+	'3207-EM_Finery' => '3207-EM Finery',
+	'3236-KS_Eternal_Iron' => '3236-KS Eternal Iron',
+	'3243-60_Narvic_Dock' => '3243-60 Narvic Dock',
+	'3377-KS_Roccia_Grigia' => '3377-KS Roccia Grigia',
+	'3394-90_Labrador_Black' => '3394-90 Labrador Black',
+	'3405-60_Cape_noir' => '3405-60 Cape noir',
+	'3447_EM_Cloudy_Gris' => '3447 EM Cloudy Gris',
+	'3455-60_Riga_Granite' => '3455-60 Riga Granite',
+	'3462-60_Teara_Black' => '3462-60 Teara Black',
+	'3488-KS_Moon_Rock' => '3488-KS Moon Rock',
+	'3505_XX_Raja_Black' => '3505 XX Raja Black',
+	'3515_KS_Lanes_of_Tivoli' => '3515 KS Lanes of Tivoli',
+	'3518-60_Salento_Stone' => '3518-60 Salento Stone',
+	'3533_EM_Travetin_Ruby_Limescale' => '3533 EM Travetin Ruby Limescale',
+	'3690_AHD_Basalt_Slate' => '3690 AHD Basalt Slate',
+	'3690_AHD_Himalayan_Slate' => '3690 AHD Himalayan Slate',
+	'4619-60_Sami' => '4619-60 Sami',
+	'4882-60_Baja_Melange' => '4882-60 Baja Melange',
+	'4890-60_Stardust_Melage' => '4890-60 Stardust Melage',
+	'4915-60_Blue_Steel' => '4915-60 Blue Steel',
+	'4920_LS_Long_Road' => '4920 LS Long Road',
+	'4939-KS_Patina_Rock' => '4939-KS Patina Rock',
+	'6242_CR_Mozaiek_Carmin' => '6242 CR Mozaiek Carmin',
+	'F_274_ST15_Concrete_Light' => 'F 274 ST15 Concrete Light',
+	'F_275_ST15_Contrete_Dark' => 'F 275 ST15 Contrete Dark',
+	'F_7207_FG_Silver_Hancock' => 'F 7207 FG Silver Hancock',
+	'F_7486_MP_Zeus_Anthracite' => 'F 7486 MP Zeus Anthracite',
+	'F_7487_MP_Zeus_Silbergrau' => 'F 7487 MP Zeus Silbergrau',
+	'F_7646_TC_Peru_Anthracite' => 'F 7646 TC Peru Anthracite',
+	'F_7654_CS_Flash_Back' => 'F 7654 CS Flash Back',
+	'F_7655CS_Quartz_Stone' => 'F 7655CS Quartz Stone',
+	'F_7684_TC_Fino_Dark_Anthracite' => 'F 7684 TC Fino Dark Anthracite',
+	'F_7919_TC_Corn_Black_White' => 'F 7919 TC Corn Black White',
+	'F_7920_TC_Com_Light_Grey' => 'F 7920 TC Com Light Grey',
+	'F_8340_MP_Mignight_Dream' => 'F 8340 MP Mignight Dream',
+	'F_8345_CS_Tula_Titaan' => 'F 8345 CS Tula Titaan',
+	'M_9510_SM_Geborsteld_Aluminium' => 'M 9510 SM Geborsteld Aluminium',
+	'M_9610_SM_RVS_Look' => 'M 9610 SM RVS Look',
+	'R_6053_CS_Ottawa_White' => 'R 6053 CS Ottawa White',
+	'R_6060_FG_Belmote_Beige' => 'R 6060 FG Belmote Beige',
+	'R_6062_FG_Belmont_Grey' => 'R 6062 FG Belmont Grey',
+	'R_6216_TC_Negro_Brasil' => 'R 6216 TC Negro Brasil',
+	'R_6217_TC_Brazil_light' => 'R 6217 TC Brazil light',
+	'R_6284_TC_Belluno_Granite' => 'R 6284 TC Belluno Granite',
+	'R_6423_CS_Limestone_Grey' => 'R 6423 CS Limestone Grey',
+	'R_6423_TC_Limestone_Grey' => 'R 6423 TC Limestone Grey',
+	'R_6424_CS_Limestone_Black' => 'R 6424 CS Limestone Black',
+	'R_6424_TC_Limestone_Black' => 'R 6424 TC Limestone Black',
+	'R_6499_TC_Roma_Marble' => 'R 6499 TC Roma Marble',
+
+	'4110-WH_Wenge_Nakuru' => '4110-WH Wenge Nakuru',
+	'4118-WH_Novara_Elm' => '4118-WH Novara Elm',
+	'4122-WH_citynight' => '4122-WH citynight',
+	'4123-WH_Cottage_Pine' => '4123-WH Cottage Pine',
+	'4124_WH_Wenge_Opaque' => '4124 WH Wenge Opaque',
+	'4137-WH_Frantic' => '4137-WH Frantic',
+	'4159_WH_Shabby_White' => '4159 WH Shabby White',
+	'4163-WH_Lumber_Pine' => '4163-WH Lumber Pine',
+	'4166-WH_Valley_Oak' => '4166-WH Valley Oak',
+	'4180-WH_Blackforest_Oak' => '4180-WH Blackforest Oak',
+	'4206-60_Block_Board_Noche' => '4206-60 Block Board Noche',
+	'4235-WH_Mags_Oak' => '4235-WH Mags Oak',
+	'4281_WH_Glacier_Bay_Oak' => '4281 WH Glacier Bay Oak',
+	'4283-EM-uitlopend_Urban_Oak' => '4283-EM-uitlopend Urban Oak',
+	'4287_FW_Winter_Pine' => '4287 FW Winter Pine',
+	'4289-WH_Vintage_Oak' => '4289-WH Vintage Oak',
+	'4318-60_Legno_Oak' => '4318-60 Legno Oak',
+	'4335_WH_Mountain_Lodge' => '4335 WH Mountain Lodge',
+	'4339-WH_Silver_Pine' => '4339-WH Silver Pine',
+	'4344-EM_Castel_Eiche' => '4344-EM Castel Eiche',
+	'4411-60_Buster_Block' => '4411-60 Buster Block',
+	'4418-60_Noah_Block' => '4418-60 Noah Block',
+	'4447_EM_Noce_Romantica' => '4447 EM Noce Romantica',
+	'4475-WH_Vintage_Festival' => '4475-WH Vintage Festival',
+	'F_22-007_RT_Papyrus_Nibia_Grey' => 'F 22-007 RT Papyrus Nibia Grey',
+	'F_22-008_RT_Papyrus_Nubia_Brown' => 'F 22-008 RT Papyrus Nubia Brown',
+	'H_1146_ST22_Bardolino_Oak_Grey' => 'H 1146 ST22 Bardolino Oak Grey',
+	'H_178_ST15_Butcherblock_Afzellia' => 'H 178 ST15 Butcherblock Afzellia',
+	'H_308_ST9_Dakota_Oak_Light' => 'H 308 ST9 Dakota Oak Light',
+	'H_3362_ST15_Highlicht_Oak_Redbrown' => 'H 3362 ST15 Highlicht Oak Redbrown',
+	'H_3704_ST15_Nussbaum_Aida_Tabak' => 'H 3704 ST15 Nussbaum Aida Tabak',
+	'R_4262_RT_Lancelot_Oak_Light' => 'R 4262 RT Lancelot Oak Light',
+	'R_4264_RT_Lancelot_Oak_Grey' => 'R 4264 RT Lancelot Oak Grey',
+	'R_4896_RT_Milano_Walnut' => 'R 4896 RT Milano Walnut',
+	'R_5320_MO_Beech_White' => 'R 5320 MO Beech White',
+	'R_5410_MO_Cognac_Wild_Pear' => 'R 5410 MO Cognac Wild Pear'
+
 );
 
 //$arrTabItems_MatKlr['cnt']['T']=array('article19105244'=>'HST 2012', 'article19105258'=>'HST 2015', 'article19105265'=>'HST 2016', 'article19602334'=>'HST 2018', 'article19301514'=>'HST 2020', 'article19301544'=>'HST 2134'); //'article19301516'=>'HST 2032', 'article19301518'=>'HST 2040', 'article19301520'=>'HST 2081', 'article19301522'=>'HST 2092', 'article19301524'=>'HST 2108', 'article19301531'=>'HST 2113', 'article19301538'=>'HST 2129', 'article19397551'=>'HST 2130'
@@ -424,25 +458,45 @@ $arrTabItems_Spoelbak['dir']['RVS_LORREINE']=$GLOBALS["own"]["baseurl"].'images/
 //$arrTabItems_Spoelbak['cnt']['RVS_REGINOX']=array('article19466401'=>array('desc'=>'Reginox Boston', 'price'=>119.00), 'article19466466'=>array('desc'=>'Reginox Chicago', 'price'=>169.00), 'article19534487'=>array('desc'=>'Reginox Denver', 'price'=>79.00), 'article19534567'=>array('desc'=>'Reginox Orlando', 'price'=>169.00), 'article19534660'=>array('desc'=>'Reginox Princess 80', 'price'=>239.00), 'article19534758'=>array('desc'=>'Reginox Queen 60', 'price'=>279.00));
 //$arrTabItems_Spoelbak['cnt']['RVS_BARONGA']=array('article19534875'=>array('desc'=>'Baronga 34', 'price'=>209.00), 'article19534976'=>array('desc'=>'Baronga 3415/1534', 'price'=>299.00), 'article19535135'=>array('desc'=>'Baronga 40', 'price'=>149.00), 'article19535247'=>array('desc'=>'Baronga 46', 'price'=>329.00), 'article19535292'=>array('desc'=>'Baronga 55', 'price'=>189.00), 'article19535338'=>array('desc'=>'Baronga 80', 'price'=>319.00));
 //$arrTabItems_Spoelbak['cnt']['RVS_FRANKE']=array('article19465465'=>array('desc'=>'Franke Gallassio GAX 110.450', 'price'=>189.00), 'article19465681'=>array('desc'=>'Franke Kubux KBX 110.34-T/210.34-T', 'price'=>239.00), 'article19465807'=>array('desc'=>'Franke Kubux KBX 110.45-T/210.45-T', 'price'=>244.00), 'article19465903'=>array('desc'=>'Franke Kubux KBX 110.55-T/210.55-T', 'price'=>269.00), 'article19434579'=>array('desc'=>'Franke Bellissimo BEX 210.50', 'price'=>179.00), 'article19466166'=>array('desc'=>'Franke Bellissimo BEX 260', 'price'=>299.00), 'article19466293'=>array('desc'=>'Franke CPX P 260', 'price'=>315.00), 'article19466057'=>array('desc'=>'Franke Quadrant QTX 210', 'price'=>79.00, 'nonDiscountPrice'=>99.00));
+
+//$arrTabItems_Spoelbak['cnt']['RVS_LORREINE']=array(
+//    'article21412761'=>array('desc'=>'Lorreine 40R', 'price'=>229.00, 'nonDiscountPrice'=>358.00),
+//    'article21412846'=>array('desc'=>'Lorreine 50R', 'price'=>259.00, 'nonDiscountPrice'=>379.00),
+//    'article21412685'=>array('desc'=>'Lorreine 34R', 'price'=>315.00, 'nonDiscountPrice'=>440.00),
+//    'article21412927'=>array('desc'=>'Lorreine 74R', 'price'=>329.00, 'nonDiscountPrice'=>553.00),
+//    'article21413116'=>array('desc'=>'Lorreine 1534R', 'price'=>409.00, 'nonDiscountPrice'=>637.00),
+//    'article21413272'=>array('desc'=>'Lorreine 3434R', 'price'=>479.00, 'nonDiscountPrice'=>789.00),
+//    'article21412452'=>array('desc'=>'Lorreine 17R', 'price'=>274.00, 'nonDiscountPrice'=>408.00),
+//    'article21412813'=>array('desc'=>'Lorreine 40V', 'price'=>309.00, 'nonDiscountPrice'=>472.00),
+//    'article21412884'=>array('desc'=>'Lorreine 50V', 'price'=>319.00, 'nonDiscountPrice'=>509.00),
+//    'article21412716'=>array('desc'=>'Lorreine 34V', 'price'=>329.00, 'nonDiscountPrice'=>517.00),
+//    'article21413050'=>array('desc'=>'Lorreine 74V', 'price'=>349.00, 'nonDiscountPrice'=>628.00),
+//    'article21413227'=>array('desc'=>'Lorreine 1534V', 'price'=>479.00, 'nonDiscountPrice'=>739.00),
+//    'article21413298'=>array('desc'=>'Lorreine 3434V', 'price'=>569.00, 'nonDiscountPrice'=>869.00),
+//    'article21412648'=>array('desc'=>'Lorreine 17V', 'price'=>345.00, 'nonDiscountPrice'=>545.00),
+//    'article33304489'=>array('desc'=>'RVS Tegelspoelbak 40 cm', 'price'=>525.00, 'nonDiscountPrice'=>683.00),
+//    'article33304550'=>array('desc'=>'RVS Tegelspoelbak 50 cm', 'price'=>540.00, 'nonDiscountPrice'=>699.00),
+//);
+
 $arrTabItems_Spoelbak['cnt']['RVS_LORREINE']=array(
-	'article21412761'=>array('desc'=>'Lorreine 40R', 'price'=>229.00, 'nonDiscountPrice'=>358.00),
-	'article21412846'=>array('desc'=>'Lorreine 50R', 'price'=>259.00, 'nonDiscountPrice'=>379.00),
-	'article21412685'=>array('desc'=>'Lorreine 34R', 'price'=>315.00, 'nonDiscountPrice'=>440.00),
-	'article21412927'=>array('desc'=>'Lorreine 74R', 'price'=>329.00, 'nonDiscountPrice'=>553.00),
-	'article21413116'=>array('desc'=>'Lorreine 1534R', 'price'=>409.00, 'nonDiscountPrice'=>637.00),
-	'article21413272'=>array('desc'=>'Lorreine 3434R', 'price'=>479.00, 'nonDiscountPrice'=>789.00),
-	'article21412452'=>array('desc'=>'Lorreine 17R', 'price'=>274.00, 'nonDiscountPrice'=>408.00),
-	'article21412813'=>array('desc'=>'Lorreine 40V', 'price'=>309.00, 'nonDiscountPrice'=>472.00),
-	'article21412884'=>array('desc'=>'Lorreine 50V', 'price'=>319.00, 'nonDiscountPrice'=>509.00),
-	'article21412716'=>array('desc'=>'Lorreine 34V', 'price'=>329.00, 'nonDiscountPrice'=>517.00),
-	'article21413050'=>array('desc'=>'Lorreine 74V', 'price'=>349.00, 'nonDiscountPrice'=>628.00),
-	'article21413227'=>array('desc'=>'Lorreine 1534V', 'price'=>479.00, 'nonDiscountPrice'=>739.00),
-	'article21413298'=>array('desc'=>'Lorreine 3434V', 'price'=>569.00, 'nonDiscountPrice'=>869.00),
-	'article21412648'=>array('desc'=>'Lorreine 17V', 'price'=>345.00, 'nonDiscountPrice'=>545.00),
-	'article33304489'=>array('desc'=>'RVS Tegelspoelbak 40 cm', 'price'=>525.00, 'nonDiscountPrice'=>683.00),
-	'article33304550'=>array('desc'=>'RVS Tegelspoelbak 50 cm', 'price'=>540.00, 'nonDiscountPrice'=>699.00),
-//    'article30270053'=>array('desc'=>'Lorreine RVS Inzetbak', 'price'=>99.00, 'nonDiscountPrice'=>149.00),
+	'article21412761'=>array('desc'=>'Lorreine 40R'),
+	'article21412846'=>array('desc'=>'Lorreine 50R'),
+	'article21412685'=>array('desc'=>'Lorreine 34R'),
+	'article21412927'=>array('desc'=>'Lorreine 74R'),
+	'article21413116'=>array('desc'=>'Lorreine 1534R'),
+	'article21413272'=>array('desc'=>'Lorreine 3434R'),
+	'article21412452'=>array('desc'=>'Lorreine 17R'),
+	'article21412813'=>array('desc'=>'Lorreine 40V'),
+	'article21412884'=>array('desc'=>'Lorreine 50V'),
+	'article21412716'=>array('desc'=>'Lorreine 34V'),
+	'article21413050'=>array('desc'=>'Lorreine 74V'),
+	'article21413227'=>array('desc'=>'Lorreine 1534V'),
+	'article21413298'=>array('desc'=>'Lorreine 3434V'),
+	'article21412648'=>array('desc'=>'Lorreine 17V'),
+	'article33304489'=>array('desc'=>'RVS Tegelspoelbak 40 cm'),
+	'article33304550'=>array('desc'=>'RVS Tegelspoelbak 50 cm'),
 );
+
 //- define the css style and its DOM id reference, used in tab buttons and tab content container and in scripting
 $arrTabItems_Spoelbak['css_id']['tabBtnContainer']='tabBut_Spoelbak';
 $arrTabItems_Spoelbak['css_id']['tabCntContainer']='tabCnt_Spoelbak';
@@ -498,21 +552,23 @@ $arrTabItems_Kraan['css_id']['tabCntContainer']='tabCnt_Kraan';
 	</div>
 	<div id="header">
 		<div class="inner">
-			<div class="header-space"></div>
-			<a href="http://www.hs-interieur.nl/">
-				<div class="header-image"></div>
-			</a>
-
-			<!-- -->
-			<div class="pane paneBar paneBarHeader">
-				<div class="inner">
-					<div class="left">
-						<ul class="left navigation">
-							<li><a class="no_underline" href="http://www.hs-interieur.nl/">HOME</a></li><li class="divider"><hr></li><li><a class="no_underline" href="http://www.hs-interieur.nl/c-2729972/voorstellen/">VOORSTELLEN</a></li><li class="divider"><hr></li><li class="has-dropdown"><a class="no_underline" href="http://www.hs-interieur.nl/c-2725218/betonnen-keukenbladen/">BETONNEN KEUKENBLADEN</a><ul class="dropdown"><li class="divider"><hr></li><li><a class="no_underline" href="http://www.hs-interieur.nl/c-1265882/beton-classic-kleuren/">Beton Classic kleuren</a></li><li><a class="no_underline" href="http://www.hs-interieur.nl/c-2371152/speciale-behandeling-tegen-vlekken/">Speciale behandeling tegen vlekken.</a></li><li><a class="no_underline" href="http://www.hs-interieur.nl/c-1274371/veel-gestelde-vragen-en-adviezen/">Veel gestelde vragen en adviezen</a></li><li><a class="no_underline" href="http://www.hs-interieur.nl/c-1274380/hoe-te-bestellen/">Hoe te bestellen?</a></li><li><a class="no_underline" href="http://www.hs-interieur.nl/c-1274372/garantie-service/">Garantie &amp; Service</a></li><li><a class="no_underline" href="http://www.hs-interieur.nl/c-2088508/offerte-aanvraag/">Offerte aanvraag</a></li></ul></li><li class="divider"><hr></li><li><a class="no_underline" href="http://www.hs-interieur.nl/c-2730209/betonnen-keukenbladen-ikea-keukens/">BETONNEN KEUKENBLADEN &amp; IKEA KEUKENS</a></li><li class="divider"><hr></li><li class="has-dropdown"><a class="no_underline" href="http://www.hs-interieur.nl/c-2730210/beton-meer/">BETON &amp; MEER</a><ul class="dropdown"><li class="divider"><hr></li><li><a class="no_underline" href="http://www.hs-interieur.nl/c-2951922/gashaardtafels/">Gashaardtafels</a></li><li><a class="no_underline" href="http://www.hs-interieur.nl/c-2731229/betonnen-salontafels/">Betonnen salontafels</a></li><li><a class="no_underline" href="http://www.hs-interieur.nl/c-2731231/betonnen-bijzettafels/">Betonnen bijzettafels</a></li><li><a class="no_underline" href="http://www.hs-interieur.nl/c-2731236/betonnen-bank/">Betonnen bank</a></li><li><a class="no_underline" href="http://www.hs-interieur.nl/c-2731238/bijzettafel-houtenstronk/">Bijzettafel houtenstronk</a></li></ul></li><li class="divider"><hr></li><li class="has-dropdown"><a class="no_underline" href="http://www.hs-interieur.nl/c-2738999/foto-s/">FOTO'S</a><ul class="dropdown"><li><a class="no_underline" href="http://www.hs-interieur.nl/c-2426880/foto-s-betonnen-keukenbladen/">Foto's betonnen keukenbladen</a></li></ul></li><li class="divider"><hr></li><li class="has-dropdown"><a class="no_underline" href="http://www.hs-interieur.nl/c-2729540/rvs-spoelbakken/">RVS SPOELBAKKEN</a><ul class="dropdown"><li><a class="no_underline" href="http://www.hs-interieur.nl/c-2737878/onderhoud-rvs-spoelbakken/">Onderhoud RVS Spoelbakken</a></li></ul></li><li class="divider"><hr></li><li><a class="no_underline" href="http://www.hs-interieur.nl/c-2729593/rvs-keukenkranen/">RVS KEUKENKRANEN</a></li><li class="divider"><hr></li><li class="has-dropdown"><a class="no_underline" href="http://www.hs-interieur.nl/c-2179117/raam-vloerdecoratie/">RAAM &amp; VLOERDECORATIE</a><ul class="dropdown"><li class="divider"><hr></li><li class="has-dropdown"><a class="no_underline" href="http://www.hs-interieur.nl/c-2086807/raamdecoratie/">RAAMDECORATIE</a><ul class="dropdown"><li><a class="no_underline" href="http://www.hs-interieur.nl/c-2092710/overgordijnen/">OVERGORDIJNEN</a></li><li><a class="no_underline" href="http://www.hs-interieur.nl/c-2092711/vitrage/">VITRAGE</a></li><li><a class="no_underline" href="http://www.hs-interieur.nl/c-2092713/vouwgordijnen/">VOUWGORDIJNEN</a></li><li><a class="no_underline" href="http://www.hs-interieur.nl/c-2092715/paneelgordijnen/">PANEELGORDIJNEN</a></li><li><a class="no_underline" href="http://www.hs-interieur.nl/c-2092716/rolgordijnen/">ROLGORDIJNEN</a></li><li><a class="no_underline" href="http://www.hs-interieur.nl/c-2092717/duo-rolgordijnen/">DUO ROLGORDIJNEN</a></li><li><a class="no_underline" href="http://www.hs-interieur.nl/c-2092718/plisse-gordijnen/">PLISS� GORDIJNEN</a></li><li><a class="no_underline" href="http://www.hs-interieur.nl/c-2092719/jaloezieen-horizontaal/">JALOEZIE�N HORIZONTAAL</a></li><li><a class="no_underline" href="http://www.hs-interieur.nl/c-2092720/jaloezieen-verticaal/">JALOEZIE�N VERTICAAL</a></li><li><a class="no_underline" href="http://www.hs-interieur.nl/c-2092721/offerte-aanvragen-raamdecoratie/">OFFERTE AANVRAGEN RAAMDECORATIE</a></li></ul></li><li><a class="no_underline" href="http://www.hs-interieur.nl/c-2086809/vloerdecoratie/">VLOERDECORATIE</a></li></ul></li><li class="divider"><hr></li><li class="divider"><hr></li><li class="has-dropdown"><a class="no_underline" href="http://www.hs-interieur.nl/c-1122128/contact/">CONTACT</a><ul class="dropdown"><li><a class="no_underline" href="http://www.hs-interieur.nl/c-1464716/algemene-voorwaarden-en-privacybeleid/">Algemene voorwaarden en privacybeleid</a></li></ul></li><li class="divider"><hr></li><li><a class="no_underline" href="http://www.hs-interieur.nl/c-2752133/facebook/">FACEBOOK</a></li><li class="divider"><hr></li><li class=" active"><a class="no_underline" href="#">OFFERTE AANVRAAG 24u</a></li>
-						</ul>
+			<div class="header-space">
+				<div class="header-left">
+					<h2>Beton - Kermamiek - Graniet - Composiet - HPL/Laminaat</h2>
+					<div class="header-nav">
+						<input type="checkbox" id="toggle">
+						<label for="toggle"><< ga terug naar de website</label>
+						<nav>
+							<ul>
+								<li><a title="Ga terug naar Keukenblad.nu" href="http://keukenblad.nu">Keukenblad.nu</a></li>
+								<li><a title="Ga terug naar HS-Interieur" href="http://www.hs-interieur.nl/">HS-Interieur</a></li>
+							</ul>
+						</nav>
 					</div>
 				</div>
-				<div class="clearfix"></div>
+				<div class="header-right">
+					<img src="./images/header_images.png" alt="">
+				</div>
 			</div>
 			<div class="header-shadow"></div>
 		</div>
@@ -711,15 +767,15 @@ $arrTabItems_Kraan['css_id']['tabCntContainer']='tabCnt_Kraan';
 						);
 
 						//test
-						$PgFldVal[9]["off_aanhef"] = "M";
-						$PgFldVal[9]["off_naam"] = "Henk Test";
-						$PgFldVal[9]["off_email"] = "henkiexxx4@gmail.com";
-						$PgFldVal[9]["off_adres"] = "testsstraat 1";
-						$PgFldVal[9]["off_postcode"] = "1111AA";
-						$PgFldVal[9]["off_woonplaats"] = "Teststad";
-						$PgFldVal[9]["off_land"] = "NL";
-						$PgFldVal[9]["off_telefoon"] = "0679924590";
-						$PgFldVal[9]["off_bericht"] = "Test bericht";
+//						$PgFldVal[9]["off_aanhef"] = "M";
+//						$PgFldVal[9]["off_naam"] = "Henk Test";
+//						$PgFldVal[9]["off_email"] = "henkiexxx4@gmail.com";
+//						$PgFldVal[9]["off_adres"] = "testsstraat 1";
+//						$PgFldVal[9]["off_postcode"] = "1111AA";
+//						$PgFldVal[9]["off_woonplaats"] = "Teststad";
+//						$PgFldVal[9]["off_land"] = "NL";
+//						$PgFldVal[9]["off_telefoon"] = "0679924590";
+//						$PgFldVal[9]["off_bericht"] = "Test bericht";
 
 
 						$i=0;
@@ -2083,9 +2139,6 @@ $arrTabItems_Kraan['css_id']['tabCntContainer']='tabCnt_Kraan';
 											$val_unit= $materialTypeContent['dimension'];
 
 											if ($val=="") $val=$val_default;
-
-											$minlen=2;
-											$maxlen=2;
 										}
 									}
 
@@ -2637,7 +2690,9 @@ $arrTabItems_Kraan['css_id']['tabCntContainer']='tabCnt_Kraan';
 
 													$ContentPg[$page].='<span id="tabCntBlock_'.$arrTabItems['css_id']['tabCntContainer'].'_all_'.$cntId.'_txt">'.$cntDescPrice['desc'].'</span>';
 													//if (!isset($cntDescPrice['nonDiscountPrice'])) {
-													$ContentPg[$page].='<span class="tabCntBlockPrice" style="top:185px;">&euro;'.$cntDescPrice['price'].',-</span>'.PHP_EOL; //185=210-25
+
+
+//													$ContentPg[$page].='<span class="tabCntBlockPrice" style="top:185px;">&euro;'.$cntDescPrice['price'].',-</span>'.PHP_EOL; //185=210-25
 													//} else {
 													//$ContentPg[$page].='<span class="tabCntBlockPrice" style="top:167px;">&euro;<strike>'.$cntDescPrice['nonDiscountPrice'].',-</strike><br />nu <span style="color:#f21000;">&euro;'.$cntDescPrice['price'].',-</span></span>'.PHP_EOL; //185=210-25-18
 													//}

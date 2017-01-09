@@ -24,34 +24,107 @@
 	margin-bottom: 15px;
 }
 
-.upper-nav {
-	margin: 0;
-	padding: 0;
-	text-align: center;
+.header-nav {
+	margin-left: 90px;
 }
 
-.upper-nav li {
-	display: inline;
+.header-shadow {
+	z-index: 1;
 }
 
-.upper-nav li:first-child {
-	margin-right: 5px;
+.header-left input {
+	display: none;
 }
-
-.upper-nav li a {
+.header-left label,
+.header-left ul {
+	border: 1px solid #0B1B6E;
+}
+.header-left label {
 	color: #0B1B6E;
 	text-transform: uppercase;
-	text-decoration: none;
-	width: 50px;
-	height: 30px;
-	border: 1px solid #0B1B6E;
-	padding: 3px;
+	font-size: 14px;
+	cursor: pointer;
+	display: inline-block;
+	padding: 5px 9px;
+	transition: all .90s ease;
+	font-family: Verdana,Geneva,sans-serif;
 }
-
-.upper-nav li a:hover {
+.header-left label:hover {
 	background-color: #0B1B6E;
 	color: #fff;
 }
+.header-left input:checked + label {
+	box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15);
+	color: #0B1B6E;
+}
+input:checked + label:hover {
+	color: #fff;
+}
+.header-left nav {
+	max-height: 0;
+	overflow: hidden;
+	transition: all .90s ease;
+	z-index: 2;
+	position: absolute;
+}
+.header-left input:checked ~ nav {
+	max-height: 500px;
+}
+.header-left ul {
+	list-style: none;
+	margin: 8px 0 0 0;
+	padding: 0;
+	width: 165px;
+}
+.header-left li {
+	border-bottom: 1px solid #0B1B6E;
+}
+.header-left li:last-child {
+	border-bottom: 0;
+}
+.header-left a {
+	font-family: Verdana,Geneva,sans-serif;
+	text-transform: uppercase;
+	color: #0B1B6E;
+	display: block;
+	padding: 6px 12px;
+	text-decoration: none;
+	background-color: #CCCCCC;
+}
+.header-left a:hover {
+	background-color: #0B1B6E;
+	color: #fff;
+}
+
+
+/*.upper-nav {*/
+	/*margin: 0;*/
+	/*padding: 0;*/
+	/*text-align: center;*/
+/*}*/
+
+/*.upper-nav li {*/
+	/*display: inline;*/
+/*}*/
+
+/*.upper-nav li:first-child {*/
+	/*margin-right: 5px;*/
+/*}*/
+
+/*.upper-nav li a {*/
+	/*color: #0B1B6E;*/
+	/*text-transform: uppercase;*/
+	/*text-decoration: none;*/
+	/*width: 50px;*/
+	/*height: 30px;*/
+	/*border: 1px solid #0B1B6E;*/
+	/*padding: 3px;*/
+/*}*/
+
+/*.upper-nav li a:hover {*/
+	/*background-color: #0B1B6E;*/
+	/*color: #fff;*/
+/*}*/
 
 .checkbox, .radio {padding:0px 5px 0px 0px;margin:none;border:none;}
 
