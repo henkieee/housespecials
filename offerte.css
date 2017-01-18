@@ -381,3 +381,51 @@ td.tabBtnText{
     top: 2px;
     width: 16px;
 }
+
+// Upload Area \\
+#uploadButton {
+	background: blue;
+    color: white;
+    padding: 10px;
+    border-radius: 7px;
+    border-style: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    font-weight: bold;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+#uploadButton + span {
+	display: block;
+	color: #777;
+	margin-top: 10px;
+}
+
+#uploadWrap {
+	border: dotted black 2px;
+	width: 225px;
+	margin-bottom: 10px;
+	text-align: center;
+	padding: 10px;
+	position: relative;
+}
+
+#uploadWrap img {
+	display: none;
+	margin-bottom: 10px;
+}
+
+#removeUpload {
+	background: red;
+    outline: none;
+    color: white;
+    border-radius: 30px;
+    border: none;
+    font-weight: bold;
+    position: absolute;
+    top: 3px;
+    right: 5px;
+    cursor: pointer;
+}
