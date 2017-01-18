@@ -94,9 +94,9 @@ $PgFldList[3]="off_type";
 $PgFldList[4]="off_rand_zichtbaar_blad1_boven,off_rand_zichtbaar_blad1_rechts,off_rand_zichtbaar_blad1_onder,off_rand_zichtbaar_blad1_links,off_rand_zichtbaar_blad2_boven,off_rand_zichtbaar_blad2_rechts,off_rand_zichtbaar_blad2_onder,off_rand_zichtbaar_blad2_links,off_rand_zichtbaar_blad3_boven,off_rand_zichtbaar_blad3_rechts,off_rand_zichtbaar_blad3_onder,off_rand_zichtbaar_blad3_links,off_rand_zichtbaar_blad4_boven,off_rand_zichtbaar_blad4_rechts,off_rand_zichtbaar_blad4_onder,off_rand_zichtbaar_blad4_links,off_rand_zichtbaar_blad5_boven,off_rand_zichtbaar_blad5_rechts,off_rand_zichtbaar_blad5_onder,off_rand_zichtbaar_blad5_links,off_rand_zichtbaar_blad6_boven,off_rand_zichtbaar_blad6_rechts,off_rand_zichtbaar_blad6_onder,off_rand_zichtbaar_blad6_links,off_rand_zichtbaar_blad7_boven,off_rand_zichtbaar_blad7_rechts,off_rand_zichtbaar_blad7_onder,off_rand_zichtbaar_blad7_links,off_rand_zichtbaar_blad8_boven,off_rand_zichtbaar_blad8_rechts,off_rand_zichtbaar_blad8_onder,off_rand_zichtbaar_blad8_links,off_rand_zichtbaar_blad9_boven,off_rand_zichtbaar_blad9_rechts,off_rand_zichtbaar_blad9_onder,off_rand_zichtbaar_blad9_links";
 $PgFldList[5]="off_staander,off_staander_blad1_boven,off_staander_blad1_rechts,off_staander_blad1_onder,off_staander_blad1_links,off_staander_blad2_boven,off_staander_blad2_rechts,off_staander_blad2_onder,off_staander_blad2_links,off_staander_blad3_boven,off_staander_blad3_rechts,off_staander_blad3_onder,off_staander_blad3_links,off_staander_blad4_boven,off_staander_blad4_rechts,off_staander_blad4_onder,off_staander_blad4_links,off_staander_blad5_boven,off_staander_blad5_rechts,off_staander_blad5_onder,off_staander_blad5_links,off_staander_blad6_boven,off_staander_blad6_rechts,off_staander_blad6_onder,off_staander_blad6_links,off_staander_blad7_boven,off_staander_blad7_rechts,off_staander_blad7_onder,off_staander_blad7_links,off_staander_blad8_boven,off_staander_blad8_rechts,off_staander_blad8_onder,off_staander_blad8_links,off_staander_blad9_boven,off_staander_blad9_rechts,off_staander_blad9_onder,off_staander_blad9_links";
 $PgFldList[6]="off_achterwand_plinten,off_rand_achter_blad1_boven,off_rand_achter_blad1_rechts,off_rand_achter_blad1_onder,off_rand_achter_blad1_links,off_rand_achter_blad2_boven,off_rand_achter_blad2_rechts,off_rand_achter_blad2_onder,off_rand_achter_blad2_links,off_rand_achter_blad3_boven,off_rand_achter_blad3_rechts,off_rand_achter_blad3_onder,off_rand_achter_blad3_links,off_rand_achter_blad4_boven,off_rand_achter_blad4_rechts,off_rand_achter_blad4_onder,off_rand_achter_blad4_links,off_rand_achter_blad5_boven,off_rand_achter_blad5_rechts,off_rand_achter_blad5_onder,off_rand_achter_blad5_links,off_rand_achter_blad6_boven,off_rand_achter_blad6_rechts,off_rand_achter_blad6_onder,off_rand_achter_blad6_links,off_rand_achter_blad7_boven,off_rand_achter_blad7_rechts,off_rand_achter_blad7_onder,off_rand_achter_blad7_links,off_rand_achter_blad8_boven,off_rand_achter_blad8_rechts,off_rand_achter_blad8_onder,off_rand_achter_blad8_links,off_rand_achter_blad9_boven,off_rand_achter_blad9_rechts,off_rand_achter_blad9_onder,off_rand_achter_blad9_links";
-$PgFldList[7]="off_dikte,off_abs,off_kookplaatuitsparing,off_spoelbakuitsparing,off_spoelbaklevering,off_spoelbaktype,off_aantalgaten,off_kraanlevering,off_kraantype,off_inmeten,off_bladverwijderen,off_afmonteren,off_opm"; //off_TerrazzoCoating,off_randafwerking,off_opdikken
+$PgFldList[7]="off_dikte,off_abs,off_kookplaatuitsparing,off_spoelbakuitsparing,off_spoelbaklevering,off_spoelbaktype,off_aantalgaten,off_kraanlevering,off_kraantype,off_inmeten,off_bladverwijderen,off_afmonteren,off_opm,off_upload"; //off_TerrazzoCoating,off_randafwerking,off_opdikken
 $PgFldList[8]="";
-$PgFldList[9]="off_aanhef,off_naam,off_email,off_adres,off_postcode,off_woonplaats,off_land,off_telefoon,off_upload,off_bericht";
+$PgFldList[9]="off_aanhef,off_naam,off_email,off_adres,off_postcode,off_woonplaats,off_land,off_telefoon,off_bericht";
 
 
 
@@ -805,15 +805,15 @@ $arrTabItems_Kraan['css_id']['tabCntContainer']='tabCnt_Kraan';
 						);
 
 						//test
-						$PgFldVal[9]["off_aanhef"] = "M";
-						$PgFldVal[9]["off_naam"] = "Henk Test";
-						$PgFldVal[9]["off_email"] = "henkiexxx4@gmail.com";
-						$PgFldVal[9]["off_adres"] = "testsstraat 1";
-						$PgFldVal[9]["off_postcode"] = "1111AA";
-						$PgFldVal[9]["off_woonplaats"] = "Teststad";
-						$PgFldVal[9]["off_land"] = "NL";
-						$PgFldVal[9]["off_telefoon"] = "0679924590";
-						$PgFldVal[9]["off_bericht"] = "Test bericht";
+						// $PgFldVal[9]["off_aanhef"] = "M";
+						// $PgFldVal[9]["off_naam"] = "Henk Test";
+						// $PgFldVal[9]["off_email"] = "henkiexxx4@gmail.com";
+						// $PgFldVal[9]["off_adres"] = "testsstraat 1";
+						// $PgFldVal[9]["off_postcode"] = "1111AA";
+						// $PgFldVal[9]["off_woonplaats"] = "Teststad";
+						// $PgFldVal[9]["off_land"] = "NL";
+						// $PgFldVal[9]["off_telefoon"] = "0679924590";
+						// $PgFldVal[9]["off_bericht"] = "Test bericht";
 
 
 						$i=0;
@@ -2600,7 +2600,7 @@ $arrTabItems_Kraan['css_id']['tabCntContainer']='tabCnt_Kraan';
 											$ContentPg[$page].='<tr height="10px"><td colspan="2"></td></tr>'.PHP_EOL;
 											$ContentPg[$page].='<tr class="light-up-hover"><td style="text-align:left;vertical-align:middle;"><input type="radio" name="'.$fld.'" value="N" '.($val=="N"?'checked="checked" ':NULL).'onclick="Sink_hole(this, \''.$arrTabItems['css_id']['tabCntContainer'].'\');" class="radio" />&nbsp;Onderbouw<div class="HelpIcon" title="De spoelbak wordt aan de onderzijde van het werkblad gemonteerd"></div></td><td><img src="'.$GLOBALS["own"]["baseurl"].'images/stap6/onderbouw-spoelbak.jpg" title="onderbouw" style="width:160px;border: 1px solid rgba(0, 0, 0, 0.0);" /></td></tr>'.PHP_EOL;
 										}
-										$ContentPg[$page].='<tr class="light-up-hover"><td style="text-align:left;vertical-align:middle;"><input type="radio" name="'.$fld.'" value="V" '.($val=="V"?'checked="checked" ':NULL).'onclick="Sink_hole(this, \''.$arrTabItems['css_id']['tabCntContainer'].'\');" class="radio" />&nbsp;Vlakinbouw<div class="HelpIcon" title="poelbak wordt in het blad geïntegreerd /verzonken"></div></td><td><img src="'.$GLOBALS["own"]["baseurl"].'images/stap6/vlakbouw-spoelbak.jpg" title="vlakinbouw" style="width:160px;border: 1px solid rgba(0, 0, 0, 0.0);" /></td></tr>'.PHP_EOL;
+										$ContentPg[$page].='<tr class="light-up-hover"><td style="text-align:left;vertical-align:middle;"><input type="radio" name="'.$fld.'" value="V" '.($val=="V"?'checked="checked" ':NULL).'onclick="Sink_hole(this, \''.$arrTabItems['css_id']['tabCntContainer'].'\');" class="radio" />&nbsp;Vlakinbouw<div class="HelpIcon" title="spoelbak wordt in het blad geïntegreerd /verzonken"></div></td><td><img src="'.$GLOBALS["own"]["baseurl"].'images/stap6/vlakbouw-spoelbak.jpg" title="vlakinbouw" style="width:160px;border: 1px solid rgba(0, 0, 0, 0.0);" /></td></tr>'.PHP_EOL;
 										$ContentPg[$page].='<tr height="10px"><td colspan="2"></td></tr>'.PHP_EOL;
 										$ContentPg[$page].='<tr class="light-up-hover"><td style="text-align:left;vertical-align:middle;"><input type="radio" name="'.$fld.'" value="P" '.($val=="P"?'checked="checked" ':NULL).'onclick="Sink_hole(this, \''.$arrTabItems['css_id']['tabCntContainer'].'\');" class="radio" />&nbsp;Opbouw<div class="HelpIcon" title="De spoelbak ligt op het blad"></div></td><td><img src="'.$GLOBALS["own"]["baseurl"].'images/stap6/opbouw-spoelbak.jpg" title="opbouw" style="width:160px;border: 1px solid rgba(0, 0, 0, 0.0);" /></td></tr>'.PHP_EOL;
 										$ContentPg[$page].='</table>'.PHP_EOL;
@@ -3210,12 +3210,12 @@ $arrTabItems_Kraan['css_id']['tabCntContainer']='tabCnt_Kraan';
 													    border: none;
 													    border-radius: 7px;
 													    padding: 7px;">
-												<span>Alleen Png, JPG, DOC(X) en PDF zijn toegestaan</span>
+												<span>Alleen PNG, JPG, DOC(X) en PDF zijn toegestaan</span>
 											</div>
 										</div>
-										<p style="color: red;" id="error"></p>
+										<p style="color: red;" id="error">' .($msg[$fld]>""?$msg[$fld]:NULL). '</p>
 										</td>';
-									$ContentPg[$page].='	<td><input type="hidden" name="'.$fld.'" value="'.$val.'" class="boxlook_content" style="width:450px" />'.($msg[$fld]>""?$msg[$fld]:NULL).'<br /></td></tr>'.PHP_EOL;
+									$ContentPg[$page].='	<td><input type="hidden" name="'.$fld.'" value="'.$val.'" class="boxlook_content" style="width:450px" /><br /></td></tr>'.PHP_EOL;
 								}
 								break;
 
@@ -3631,7 +3631,7 @@ $arrTabItems_Kraan['css_id']['tabCntContainer']='tabCnt_Kraan';
 								$email_to=''.$ApplInit["email_to"].'';
 								//if ($_SERVER["SERVER_NAME"]=="www.go2all.nl") $email_to='ggj.cremers@casema.nl'; //TEST, overrule
 								//test
-								$email_to='henkiexxx4@gmail.com';
+								//$email_to='michellesieval@hotmail.com';
 								$email_from='"hs-interieur" <'.$ApplInit["email_to"].'>';
 								$email_replyto=$email_to;
 								$email_failto=''; //NOT_TODO, not supported
