@@ -43,23 +43,31 @@ function readImg(input)
     if(file.size > 2097152) error = 'De geuploade file mag niet groter zijn dan 2MB';
     if(fileTypes.indexOf(file.type)  === -1) error = 'De geuploade file moet van het type PNG, JPG, DOC(X) of PDF zijn';
     if(! error) reader.readAsDataURL(file)
+	else removeUpload();
 	document.querySelector('#error').textContent = error;
+}
+
+function removeUpload() {
+	document.getElementById('removeUpload').style.display = 'none';
+	document.getElementById('upload-img').style.display = 'none';
+	document.getElementById('uploadFile').value = '';
+	localStorage.clear();
 }
 
 document.addEventListener("DOMContentLoaded", function(ev) {
     var uploadedFile = JSON.parse(localStorage.getItem('uploaded_file')),
-    	removeUploadBtn = document.getElementById('removeUpload');
+    	removeUploadBtn = document.getElementById('removeUpload'),
+    	uploadBtn = document.getElementById('uploadButton');
     if(uploadedFile) showUploadedFile(uploadedFile);
-    else removeUploadBtn.style.display = 'none';
+    else if(removeUploadBtn) removeUploadBtn.style.display = 'none';
 
-    document.getElementById('uploadButton').addEventListener('click', function() {	   
+    uploadBtn && uploadBtn.addEventListener('click', function() {	   
         document.getElementById('uploadFile').click();
     });
 
-    document.getElementById('removeUpload').addEventListener('click', function(ev) {
-    	ev.target.style.display = 'none';
-    	document.getElementById('upload-img').style.display = 'none';
-    	localStorage.clear();
+    removeUploadBtn && removeUploadBtn.addEventListener('click', function(ev) {
+    	removeUpload();
+    	ev.preventDefault();
     });
 });
 
