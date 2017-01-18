@@ -807,7 +807,7 @@ $arrTabItems_Kraan['css_id']['tabCntContainer']='tabCnt_Kraan';
 						//test
 						// $PgFldVal[9]["off_aanhef"] = "M";
 						// $PgFldVal[9]["off_naam"] = "Henk Test";
-						// $PgFldVal[9]["off_email"] = "henkiexxx4@gmail.com";
+						// $PgFldVal[9]["off_email"] = "";
 						// $PgFldVal[9]["off_adres"] = "testsstraat 1";
 						// $PgFldVal[9]["off_postcode"] = "1111AA";
 						// $PgFldVal[9]["off_woonplaats"] = "Teststad";
