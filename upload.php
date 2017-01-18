@@ -52,6 +52,7 @@ if(isset($_POST['submit'])) upload();
         	localStorage.setItem('uploaded_file', file);
             uploadImgEl.style.display = "block";
             uploadImgEl.src = localStorage.getItem('uploaded_file');
+            document.getElementById('removeUpload').style.display = 'block';
         }
 
 		function readImg(input) 
@@ -74,21 +75,86 @@ if(isset($_POST['submit'])) upload();
         }
 
 		document.addEventListener("DOMContentLoaded", function(event) {
-		    var uploadedFile = localStorage.getItem('uploaded_file');
-		    if(uploadedFile) showUploadedFile(uploadedFile)
+		    var uploadedFile = localStorage.getItem('uploaded_file'),
+		    	removeUploadBtn = document.getElementById('removeUpload');
+		    if(uploadedFile) showUploadedFile(uploadedFile);
+		    else removeUploadBtn.style.display = 'none';
+
+		    document.getElementById('uploadButton').addEventListener('click', function openDialog() {	   
+	            document.getElementById('uploadFile').click();
+	        });
+
+	        document.getElementById('removeUpload').addEventListener('click', function(ev) {
+	        	ev.target.style.display = 'none';
+	        	document.getElementById('upload-img').style.display = 'none';
+	        	localStorage.clear();
+	        });
 		});
-
-
 	</script>
+	<link rel="stylesheet" type="text/css" href="offerte.css">
+	<style type="text/css">
+		#uploadButton {
+			background: blue;
+		    color: white;
+		    padding: 10px;
+		    border-radius: 7px;
+		    border-style: none;
+		    border: none;
+		    cursor: pointer;
+		    outline: none;
+		    font-weight: bold;
+		    font-size: 12px;
+		    margin-bottom: 5px;
+		}
+
+		#uploadButton + span {
+			display: block;
+			color: #777;
+		}
+
+		#uploadWrap {
+			border: dotted black 2px;
+			width: 200px;
+			margin-bottom: 10px;
+			text-align: center;
+			padding: 10px;
+			position: relative;
+		}
+
+		#uploadWrap img {
+			display: none;
+			margin-bottom: 10px;
+		}
+
+		#removeUpload {
+			background: red;
+		    outline: none;
+		    color: white;
+		    border-radius: 30px;
+		    border: none;
+		    font-weight: bold;
+		    position: absolute;
+		    top: 3px;
+		    right: 5px;
+		    cursor: pointer;
+		}
+	</style>
 </head>
 <body>
 	<form action="" method="post" enctype="multipart/form-data">
-		<label>Upload een afbeelding</label>
-		<br>
+	
 		<p id="succes" style="color: lightgreen;"><?php if(isset($success)) echo $success; ?></p>
 		<p id="error" style="color: red;"><?php if(isset($error)) echo $error; ?></p>
-		<input type="file" name="upfile" onchange="readImg(this)"/>
-		<img id="upload-img" src="" style="display: none;width: 200px;" />
+		<input type="file" id="uploadFile" name="upfile" onchange="readImg(this)"/ style="display:none">
+		<div id="uploadWrap">
+			<img id="upload-img" src="" style="width: 200px;" />
+			<button title="Verwijder upload" id="removeUpload">X</button>
+			<div id="uploadArea">
+				<input type="button" id="uploadButton" name="" value="Selecteer upload">
+				<span>Alleen Png, JPG, DOC(X) en PDF toegestaan</span>
+			</div>
+		</div>
+		<br />
 		<input type="submit" name="submit" value="submit" />
 	</form>
 </body>

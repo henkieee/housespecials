@@ -1,3 +1,68 @@
+function showUploadedFile(file)
+{
+	var uploadImgEl = document.getElementById('upload-img'),
+		uploadDocEl = document.getElementById('upload-document');
+
+	uploadImgEl.style.display = "none";
+	uploadDocEl.textContent = '';
+
+	if(file.type === "image/png" || file.type === "image/jpeg") 
+	{
+		uploadImgEl.style.display = "block";
+    	uploadImgEl.src = file.data;
+	}
+	else uploadDocEl.textContent = file.name;
+    document.getElementById('removeUpload').style.display = 'block';
+}
+
+function readImg(input) 
+{	
+    if (! input.files.length) return; 
+
+    var reader = new FileReader(),
+        	file = input.files[0],
+        	fileTypes = [
+            		'image/png', 
+            		'image/jpeg',
+            		'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
+            		'application/msword',
+            		'application/pdf'
+        		], 
+        	error = '';
+
+    reader.onload = function (e) {
+    	var currentFile = {
+    		name: file.name,
+    		type: file.type,
+    		data: e.target.result
+    	};
+    	localStorage.setItem('uploaded_file', JSON.stringify(currentFile));
+    	showUploadedFile(currentFile);
+    };
+
+    if(file.size > 2097152) error = 'De geuploade file mag niet groter zijn dan 2MB';
+    if(fileTypes.indexOf(file.type)  === -1) error = 'De geuploade file moet van het type PNG, JPG, DOC(X) of PDF zijn';
+    if(! error) reader.readAsDataURL(file)
+	document.querySelector('#error').textContent = error;
+}
+
+document.addEventListener("DOMContentLoaded", function(ev) {
+    var uploadedFile = JSON.parse(localStorage.getItem('uploaded_file')),
+    	removeUploadBtn = document.getElementById('removeUpload');
+    if(uploadedFile) showUploadedFile(uploadedFile);
+    else removeUploadBtn.style.display = 'none';
+
+    document.getElementById('uploadButton').addEventListener('click', function() {	   
+        document.getElementById('uploadFile').click();
+    });
+
+    document.getElementById('removeUpload').addEventListener('click', function(ev) {
+    	ev.target.style.display = 'none';
+    	document.getElementById('upload-img').style.display = 'none';
+    	localStorage.clear();
+    });
+});
+
 //material and color
 function GoForwardClick() {
 	document.getElementById('GoForward').click();
