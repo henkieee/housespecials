@@ -7,21 +7,25 @@ function emptyUploadDir()
 
 function upload()
 {
+	//print_r($_FILES['upfile']);
 	
 	if(! empty($_FILES['upfile']['name']))
 	{
 		$error = '';
-		$succes = '';
+		$success = '';
 		$finfo = new finfo(FILEINFO_MIME_TYPE);
 	   	if ($_FILES['upfile']['size'] > 2097152) $error = 'De geuploade file mag niet groter zijn dan 2MB';
 	    if (false === $ext = array_search(
 	        $finfo->file($_FILES['upfile']['tmp_name']),
 	        array(
-	            'jpg' => 'image/jpeg',
-	            'png' => 'image/png'
+	            'jpg' 	=> 	'image/jpeg',
+	            'png' 	=> 	'image/png',
+	            'docx' 	=> 	'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
+        		'doc' 	=> 	'application/msword',
+        		'pdf'	=>	'application/pdf'
 	        ),
 	        true
-	    )) $error = 'De geuploade file moet van het type PNG of JPG zijn';
+	    )) $error = 'De geuploade file moet van het type PNG, JPG DOC(X) of PDF zijn';
 		else if (!move_uploaded_file(
 		        $_FILES['upfile']['tmp_name'],
 		        sprintf('./upload/%s.%s',
@@ -32,6 +36,8 @@ function upload()
 		        $error = 'De file kon niet geupload worden';
 		    }
 	    else $success = 'File is geupload';
+	    echo $error;
+	    echo $success;
 	}
 }
 
@@ -47,11 +53,15 @@ if(isset($_POST['submit'])) upload();
 
 		function showUploadedFile(file)
         {
-        	var uploadImgEl = document.querySelector('#upload-img');
+        	var uploadImgEl = document.getElementById('upload-img'),
+        		uploadDocEl = document.getElementById('upload-document');
 
-        	localStorage.setItem('uploaded_file', file);
-            uploadImgEl.style.display = "block";
-            uploadImgEl.src = localStorage.getItem('uploaded_file');
+        	if(file.type === "image/png" || file.type === "image/jpeg") 
+        	{
+        		uploadImgEl.style.display = "block";
+            	uploadImgEl.src = file.data;
+        	}
+        	else uploadDocEl.textContent = file.name;
             document.getElementById('removeUpload').style.display = 'block';
         }
 
@@ -61,11 +71,23 @@ if(isset($_POST['submit'])) upload();
 
             var reader = new FileReader(),
                 	file = input.files[0],
-                	fileTypes = ["image/png", "image/jpeg"], 
+                	fileTypes = [
+	                		'image/png', 
+	                		'image/jpeg',
+	                		'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
+	                		'application/msword',
+	                		'application/pdf'
+                		], 
                 	error = '';
 
             reader.onload = function (e) {
-            	showUploadedFile(e.target.result);
+            	var currentFile = {
+            		name: file.name,
+            		type: file.type,
+            		data: e.target.result
+            	};
+            	localStorage.setItem('uploaded_file', JSON.stringify(currentFile));
+            	showUploadedFile(currentFile);
             };
 
             if(file.size > 2097152) error = 'De geuploade file mag niet groter zijn dan 2MB';
@@ -74,13 +96,13 @@ if(isset($_POST['submit'])) upload();
             else reader.readAsDataURL(file);
         }
 
-		document.addEventListener("DOMContentLoaded", function(event) {
-		    var uploadedFile = localStorage.getItem('uploaded_file'),
+		document.addEventListener("DOMContentLoaded", function(ev) {
+		    var uploadedFile = JSON.parse(localStorage.getItem('uploaded_file')),
 		    	removeUploadBtn = document.getElementById('removeUpload');
 		    if(uploadedFile) showUploadedFile(uploadedFile);
 		    else removeUploadBtn.style.display = 'none';
 
-		    document.getElementById('uploadButton').addEventListener('click', function openDialog() {	   
+		    document.getElementById('uploadButton').addEventListener('click', function() {	   
 	            document.getElementById('uploadFile').click();
 	        });
 
@@ -93,7 +115,7 @@ if(isset($_POST['submit'])) upload();
 	</script>
 	<link rel="stylesheet" type="text/css" href="offerte.css">
 	<style type="text/css">
-		#uploadButton {
+/*		#uploadButton {
 			background: blue;
 		    color: white;
 		    padding: 10px;
@@ -124,6 +146,7 @@ if(isset($_POST['submit'])) upload();
 		#uploadWrap img {
 			display: none;
 			margin-bottom: 10px;
+			width: 200px;
 		}
 
 		#removeUpload {
@@ -138,6 +161,10 @@ if(isset($_POST['submit'])) upload();
 		    right: 5px;
 		    cursor: pointer;
 		}
+
+		#upload-document {
+			color: green;
+		}*/
 	</style>
 </head>
 <body>
@@ -147,11 +174,18 @@ if(isset($_POST['submit'])) upload();
 		<p id="error" style="color: red;"><?php if(isset($error)) echo $error; ?></p>
 		<input type="file" id="uploadFile" name="upfile" onchange="readImg(this)"/ style="display:none">
 		<div id="uploadWrap">
-			<img id="upload-img" src="" style="width: 200px;" />
+			<img id="upload-img" src="" style="width: 200px;"/>
+			<p id="upload-document"></p>
 			<button title="Verwijder upload" id="removeUpload">X</button>
 			<div id="uploadArea">
-				<input type="button" id="uploadButton" name="" value="Selecteer upload">
-				<span>Alleen Png, JPG, DOC(X) en PDF toegestaan</span>
+				<input type="button" id="uploadButton" name="" value="Selecteer upload"
+				style="font-size: 16px;
+					    background: blue;
+					    color: white;
+					    border: none;
+					    border-radius: 7px;
+					    padding: 7px;">
+				<span>Alleen Png, JPG, DOC(X) en PDF zijn toegestaan</span>
 			</div>
 		</div>
 		<br />
